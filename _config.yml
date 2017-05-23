@@ -17,16 +17,16 @@ baseurl: ""
 title: My website
 
 # Short description of your site
-description: a CS/Stats student at UWaterloo, a Machine Learning noob, and a thriller movie/TV show addict
+description: Blog
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Contact:
     - Twitter: "http://twitter.com/antnh6"
-    - Instagram: "http://www.instagram.com/antnh6"
+    - Instagram: "http://www.instagram.com/an.nwin"
     - GitHub: "https://github.com/antnh6"
   Subscribe: "subscribe"
 
@@ -43,28 +43,29 @@ title-img: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
+  name: An Nguyen
+  email: "antnh6@gmail.com"
+  facebook: antnh6  # eg. daattali
+  github: antnh6    # eg. daattali
+  twitter: antnh6   # eg. daattali
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   linkedin: yourname  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
-  instagram: yourname # eg. daattali
+  instagram: an.nwin # eg. daattali
   youtube: yourlink   # eg. user/daattali or channel/daattali
   spotify: yourname   # eg. daattali
-  telephone: yourphone   # eg. +14159998888
+  telephone: +12265051846   # eg. +14159998888
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
-  facebook: true
   email: true
   twitter: true
+  
+  rss: false
+  facebook: false
   google-plus: false
   github: true
   reddit: false
@@ -80,20 +81,23 @@ footer-links-active:
 # Select which share links to show in posts
 share-links-active:
   twitter: true
-  facebook: true
-  google: false
   linkedin: true
+  github: true
+  facebook: true
+  
+  google: false
+
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "annwin.me"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "antnh6"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: "UA-99583770-1"
 
 # Google Tag Manager ID
 #gtm: ""
@@ -207,5 +211,4 @@ prose:
 gems:
   - jekyll-paginate
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+
