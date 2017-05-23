@@ -5,7 +5,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #7b079b;
+  color: #e8930b;
   position: relative;
   background: #FFF;
 }
@@ -97,7 +97,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #491703;
+  background: #602807;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
