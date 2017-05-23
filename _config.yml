@@ -63,8 +63,8 @@ author:
 footer-links-active:
   email: true
   twitter: true
+  rss: true
   
-  rss: false
   facebook: false
   google-plus: false
   github: true
@@ -210,5 +210,3 @@ prose:
 
 gems:
   - jekyll-paginate
-
-
