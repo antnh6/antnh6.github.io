@@ -257,14 +257,14 @@ img {
 
 footer {
   padding: 30px 0;
-  background: #F5F5F5;
+  background: #443266;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
   font-size: 14px;
 }
 
 footer a {
-  color: #404040;
+  color: #FFF;
 }
 
 footer .list-inline {
@@ -318,7 +318,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0085a1;
+  color: #7b079b;
 }
 
 .post-preview .post-title {
