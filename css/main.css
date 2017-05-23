@@ -111,14 +111,14 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #443266;
+  color: #9a0bc1;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #7b079b;
+  color: #fff;
 }
 
 .navbar-custom .navbar-brand-logo {
