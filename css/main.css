@@ -62,21 +62,21 @@ hr.small {
 }
 
 ::-moz-selection {
-  color: yellow;
+  color: blue;
   text-shadow: none;
   background: #0085a1;
 }
 ::selection {
-  color: yellow;
+  color: blue;
   text-shadow: none;
   background: #0085a1;
 }
 img::selection {
-  color: yellow;
+  color: blue;
   background: transparent;
 }
 img::-moz-selection {
-  color: yellow;
+  color: blue;
   background: transparent;
 }
 
@@ -118,7 +118,7 @@ img {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: yellow;
+  color: #9a01c4;
 }
 
 .navbar-custom .navbar-brand-logo {
@@ -238,7 +238,7 @@ img {
     text-align: center;
   }  
   .navbar-custom .nav .navlinks-container:hover {
-    background: black; /*#eee*/
+    background: #443266; /*#eee*/
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
@@ -248,7 +248,7 @@ img {
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
     padding-left: 10px;
-    border: 1px solid blue; /*#eaeaea*/
+    border: 1px solid #fff; /*#eaeaea*/
     border-width: 0 1px 1px;
   }
 }
