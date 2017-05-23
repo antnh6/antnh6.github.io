@@ -4,6 +4,31 @@ title: An Nguyen
 subtitle: a CS/Stats student at UWaterloo, a Machine Learning noob, and a thriller movie/TV show addict
 use-site-title: true
 ---
+<!-- Typed.js --> 
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/typed.js" type="text/javascript"></script>
+<script>
+  $(function(){
+    $(".typed").typed({
+      strings: ["Machine Learning.","Stuff."],
+      typeSpeed: 100,
+      loop: true,
+      backDelay: 1000
+    });
+  });
+</script>
+
+<div class="typed-js-hide">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="text-center">
+          <h1>I write about <span class="typed" style="color:#a50509";></span></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--untouched below-->
 
 <div class="posts-list">
   {% for post in paginator.posts %}
