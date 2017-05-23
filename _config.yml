@@ -23,12 +23,15 @@ description: Blog
 
 # List of links in the navigation bar
 navbar-links:
+  Blog: ""
   About Me: "aboutme"
+  GitHub: "https://github.com/antnh6"
   Contact:
     - Twitter: "http://twitter.com/antnh6"
     - Instagram: "http://www.instagram.com/an.nwin"
-    - GitHub: "https://github.com/antnh6"
-  Subscribe: "subscribe"
+  Résumé/CV: ""
+nav-search: "search"
+#  Subscribe: "subscribe"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -36,7 +39,7 @@ avatar: "/img/avatar-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: "/img/avatar-icon.png"
+#title-img: "/img/avatar-icon.png"
 
 # --- Footer options --- #
 
@@ -45,27 +48,33 @@ title-img: "/img/avatar-icon.png"
 author:
   name: An Nguyen
   email: "antnh6@gmail.com"
-  facebook: antnh6  # eg. daattali
+
   github: antnh6    # eg. daattali
   twitter: antnh6   # eg. daattali
+  instagram: an.nwin # eg. daattali
+  telephone: +12265051846   # eg. +14159998888
+  facebook: antnh6  # eg. daattali
+  
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   linkedin: yourname  # eg. daattali
   xing: yourname      # eg. daattali
   stackoverflow: yourlink  # eg. "3943160/daattali"
   snapchat: yourname  # eg. daattali
-  instagram: an.nwin # eg. daattali
   youtube: yourlink   # eg. user/daattali or channel/daattali
   spotify: yourname   # eg. daattali
-  telephone: +12265051846   # eg. +14159998888
+
 
 # Select which links to show in the footer
 footer-links-active:
   email: true
   twitter: true
   rss: true
+  telephone: true
+  youtube: true
+  instagram: true
+  facebook: true
   
-  facebook: false
   google-plus: false
   github: true
   reddit: false
@@ -74,9 +83,8 @@ footer-links-active:
   stackoverflow: false
   snapchat: false
   instagram: false
-  youtube: false
   spotify: false
-  telephone: false
+
 
 # Select which share links to show in posts
 share-links-active:
