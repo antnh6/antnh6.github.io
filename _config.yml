@@ -49,12 +49,13 @@ author:
   name: An Nguyen
   email: "antnh6@gmail.com"
 
+  quora: antnh6
   github: antnh6    # eg. daattali
   twitter: antnh6   # eg. daattali
   instagram: an.nwin # eg. daattali
   telephone: +12265051846   # eg. +14159998888
-  facebook: antnh6  # eg. daattali
-  
+
+  facebook: yourname  # eg. daattali  
   reddit: yourname    # eg. daattali
   google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
   linkedin: yourname  # eg. daattali
@@ -71,18 +72,18 @@ footer-links-active:
   twitter: true
   rss: true
   telephone: true
-  youtube: true
-  instagram: true
-  facebook: true
-  
-  google-plus: false
   github: true
+  instagram: true
+  quora: true
+  
+  youtube: false
+  facebook: false
+  google-plus: false
   reddit: false
   linkedin: false
   xing: false
   stackoverflow: false
   snapchat: false
-  instagram: false
   spotify: false
 
 
@@ -143,6 +144,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+      show-share: true # add sharing buttons to all blog posts	
   -
     scope:
       path: "" # all files
