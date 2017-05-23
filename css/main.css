@@ -7,7 +7,7 @@ body {
   font-size: 18px;
   color: #e8930b;
   position: relative;
-  background: #FFF;
+  background: #BDAEC6; /*was #fff for white*/
 }
 p {
   line-height: 1.5;
@@ -15,7 +15,7 @@ p {
 }
 p a {
   /* text-decoration: underline */
-  color: #e8930b;
+  color: pink;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -97,7 +97,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #602807;
+  background: #FFF;
   border-bottom: 1px solid #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -111,14 +111,14 @@ img {
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
   font-weight: 800;
-  color: #7b079b;
+  color: #421C52;
 }
 
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #e8930b;
+  color: #732C7B;
 }
 
 .navbar-custom .navbar-brand-logo {
