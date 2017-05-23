@@ -17,7 +17,7 @@ baseurl: ""
 title: My website
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: a CS/Stats student at UWaterloo, a Machine Learning noob, and a thriller movie/TV show addict
 
 # --- Navigation bar options --- #
 
@@ -25,10 +25,11 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://github.com/antnh6"
-  Author's home: "http://deanattali.com"
+    - Twitter: "http://twitter.com/antnh6"
+    - Instagram: "http://www.instagram.com/antnh6"
+    - GitHub: "https://github.com/antnh6"
+  Subscribe: "subscribe"
+  ? : "search"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -36,7 +37,7 @@ avatar: "/img/avatar-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-#title-img: "/img/avatar-icon.png"
+title-img: "/img/avatar-icon.png"
 
 # --- Footer options --- #
 
