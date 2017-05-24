@@ -24,7 +24,7 @@ description: Home
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Blog: ""
+  TODO List: ""
   GitHub: "https://github.com/antnh6"
   Contact:
     - Twitter: "http://twitter.com/antnh6"
