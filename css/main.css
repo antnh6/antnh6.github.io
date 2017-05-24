@@ -312,13 +312,13 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #6271b3; 
+  color: #7b079b; 
 }
 
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #7b079b;
+  color: #a778bb;
 }
 
 .post-preview .post-title {
@@ -332,7 +332,7 @@ footer .theme-by {
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #c1d0eb;
+  color: #6271b3;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
