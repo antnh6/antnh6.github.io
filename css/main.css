@@ -260,11 +260,11 @@ footer {
   background: #443266;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 footer a {
-  color: yellow; /*#FFF*/
+  color: #FFF; /*#FFF*/
 }
 
 footer .list-inline {
@@ -312,7 +312,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #FFF; /*#404040*/
+  color: yellow; /*#404040*/
 }
 
 .post-preview a:focus,
