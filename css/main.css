@@ -260,7 +260,7 @@ footer {
   background: #443266;
   border-top: 1px #EAEAEA solid;
   margin-top: 50px;
-  font-size: 14px;
+  font-size: 25px;
 }
 
 footer a {
@@ -312,7 +312,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #404040;
+  color: #FFF; /*#404040*/
 }
 
 .post-preview a:focus,
@@ -573,7 +573,7 @@ footer .theme-by {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 10px 5px;
-  background: #FFF;
+  background: yellow; /*#fff*/
   border-radius: 0;
   color: #404040;
 }
