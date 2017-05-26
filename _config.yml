@@ -25,8 +25,9 @@ description: Home
 navbar-links:
   About Me: "aboutme"
   TODO List: ""
-  GitHub: "https://github.com/antnh6"
+  Projects: ""
   Contact:
+    - GitHub: "https://github.com/antnh6"
     - Twitter: "http://twitter.com/antnh6"
     - Instagram: "http://www.instagram.com/an.nwin"
     - Subscribe: "subscribe"
