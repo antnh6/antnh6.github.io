@@ -23,7 +23,7 @@ description: Home
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  Blog: "https://medium.com/@antnh6"
   TODO List: ""
   Projects: ""
   Contact:
