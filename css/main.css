@@ -62,21 +62,21 @@ hr.small {
 }
 
 ::-moz-selection {
-  color: blue;
+  color: #6b1187;
   text-shadow: none;
-  background: #0085a1;
+  background: #f0bfff;
 }
 ::selection {
-  color: blue;
+  color: #6b1187;
   text-shadow: none;
-  background: #0085a1;
+  background: #f0bfff;
 }
 img::selection {
-  color: blue;
+  color: #6b1187;
   background: transparent;
 }
 img::-moz-selection {
-  color: blue;
+  color: #6b1187;
   background: transparent;
 }
 
@@ -227,7 +227,8 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .navbar-custom .nav .navlinks-container.show-children {
-    background: green; /*#eee*/
+    background: #b7018d
+; /*#eee*/
   }
   .navbar-custom .nav .navlinks-container.show-children .navlinks-children {
     display: block;
