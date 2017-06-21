@@ -3,6 +3,7 @@ layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
 image: /img/avatar-icon.png
+published: true
 tags: [template, markdown]
 ---
 
