@@ -2,7 +2,7 @@
 layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
-image: /img/hello_world.jpeg
+image: /img/avatar-icon.png
 tags: [template, markdown]
 ---
 
