@@ -1,5 +1,10 @@
-Gaussian Naive Bayes
 ---
+layout: post
+title: Gaussian Naive Bayes
+subtitle: testing
+tags: [supervised, markdown]
+---
+
 
 ### Conditional Probability
 Prior 
