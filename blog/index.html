@@ -2,8 +2,9 @@
 layout: page
 title: "Notes"
 subtitle: These are my notes on Machine Learning-related stuff
-css: "/css/index.css"
 ---
+<meta property="og:image" content="{{ post.thumbnail }}">
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article>
@@ -15,6 +16,7 @@ css: "/css/index.css"
 	      {{ post.subtitle }}
 	    </h3>
 	    {% endif %}
+	    
       <p class="post-meta">
         Posted on {{ post.date | date: "%B %-d, %Y" }}
       </p>
@@ -23,6 +25,7 @@ css: "/css/index.css"
         {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
         <span href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</span>
       </div>
+	    
     </a>  
    </article>
   {% endfor %}
