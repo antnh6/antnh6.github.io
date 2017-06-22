@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: page
 title: Test file
 subtitle: TODO
-image: /img/avatar-icon.png
-tags: [projects, markdown]
+image: /img/404-southpark.jpg
+tags: [projects]
 ---
 
 
