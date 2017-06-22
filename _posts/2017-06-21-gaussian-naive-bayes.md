@@ -21,5 +21,5 @@ Then, just run the formula above for all possible outcomes and pick one with the
 * The version space is a subset of the hypothesis space, which is a space of all possible hypotheses. It contains those hypotheses such that they correctly predict the training data you have (essentially a 100% model fit). 
 * For example:
 
-![Version Space](https://github.com/antnh6/udacity-machine-learning/blob/master/supervised/gaussian-naive-bayes/version-space.png?raw=true)
+![Version Space](https://github.com/antnh6/udacity-machine-learning/blob/master/supervised/gaussian-naive-bayes/version-space.png?raw=true){:height="36px" width="36px"}
  
