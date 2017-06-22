@@ -25,7 +25,7 @@ description: Home
 navbar-links:
   Blog: "https://medium.com/@antnh6"
   Notes: "blog"
-  TODO List: ""
+  TODO List: "todo"
   Projects: "projects"
   Contact:
     - GitHub: "https://github.com/antnh6"
