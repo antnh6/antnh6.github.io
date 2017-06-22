@@ -133,7 +133,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-paginate_path: /notes/page:/projects/page:num                           #NEW!!!
+paginate_path: notes/page:num
+#/notes/page:/projects/page:num                           #NEW!!!
 
 kramdown:
   input: GFM
