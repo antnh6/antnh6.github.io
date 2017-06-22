@@ -1,11 +1,8 @@
 ---
 layout: page
-title: Test file
+title: Projects Test File
 subtitle: TODO
-image: /img/404-southpark.jpg
 tags: [projects]
-use-site-title: true
-
 ---
 
 
