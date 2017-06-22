@@ -2,6 +2,7 @@
 layout: post
 title: Gaussian Naive Bayes
 tags: [supervised, machine-learning]
+css: /css/post-img.css
 ---
 
 
@@ -18,6 +19,5 @@ Then, just run the formula above for all possible outcomes and pick one with the
 ### Version Space
 
 * The version space is a subset of the hypothesis space, which is a space of all possible hypotheses. It contains those hypotheses such that they correctly predict the training data you have (essentially a 100% model fit). For example:
-<p align="center">
-![Version Space](https://github.com/antnh6/udacity-machine-learning/blob/master/supervised/gaussian-naive-bayes/version-space.png?raw=true){:height="60%" width="60%"}
-</p>
+> ![Version Space](https://github.com/antnh6/udacity-machine-learning/blob/master/supervised/gaussian-naive-bayes/version-space.png?raw=true){:height="70%" width="70%"}
+
