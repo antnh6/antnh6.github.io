@@ -1,9 +1,9 @@
 ---
-layout: projects
+layout: page
 title: Projects Test File
 subtitle: TODO
-tags: [projects]
-comments:true
+comments: true
+tags: [linear-regression]
 ---
 
 

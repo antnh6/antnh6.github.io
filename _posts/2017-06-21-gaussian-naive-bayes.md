@@ -2,7 +2,7 @@
 layout: post
 title: Gaussian Naive Bayes
 tags: [supervised, machine-learning]
-css: /css/post-img.css
+categories: notes
 ---
 
 
