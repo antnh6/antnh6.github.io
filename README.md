@@ -7,6 +7,6 @@ Resources I used to make this blog using Jekyll, and Github Pages:
     - https://pages.github.com/
 - This tutorial: https://webdesign.tutsplus.com/tutorials/how-to-set-up-a-jekyll-theme--cms-26332
 - Disqus and Google Analytics accounts to keep track of my stalkers, jk viewers :)
-  
-The entire process took me 2 days, but most of the people from the blogs that I've read got it done in less than 24 hrs, so be optimistic.
+- To add a favicon https://stackoverflow.com/a/11893504/7704870
 
+To be Updated when I find other cool stuff to improve the site.
