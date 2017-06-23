@@ -3,7 +3,7 @@ layout: post
 title: Test markdown
 subtitle: Each post also has a subtitle
 image: /img/avatar-icon.png
-
+categories: notes
 tags: [template, markdown]
 ---
 
