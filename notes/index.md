@@ -8,7 +8,7 @@ comments: true
 # Table of contents
 
 1. [Supervised](2017-06-23-blahx3)
-	* [Linear Regression] (2017-06-27-linear-regression)
+	* [Linear Regression](2017-06-27-linear-regression)
 	* [Decision Tree]() 
 	* [Gaussian Naive Bayes](2017-06-21-gaussian-naive-bayes)
 	* [Neural Networks](2017-06-24-neural-networks)

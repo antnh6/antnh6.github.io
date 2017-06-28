@@ -6,7 +6,7 @@ categories: notes
 ---
 ### Prior Probability [(source)][1]
 
->![Prior probability](../../img/post-img/supervised/gaussianNB/1.png)
+![Prior probability](../../img/post-img/supervised/gaussianNB/1.png)
 
 ### Posterior Probability
 

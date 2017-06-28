@@ -21,7 +21,7 @@ R<sup>2</sup> is nice because it captures the values added by adding a linear re
 * The model's R² value can never decrease from adding new variables to the model. This is due to the fact that it is always possible to set the coefficient for the new variable to zero in the new model. However, this would be the same as the old model. So the only reason to make the coefficient non-zero is if it improves the R² value of the model, since linear regression picks the coefficients to minimize the error terms, which is the same as maximizing the R². [(Source)][1]
     * Only out-of-sample(test set) R<sup>2</sup> can be negative.
 
-> ![img](../../img/post-img/supervised/lin-reg/1.png)
+> ![img](../../img/post-img/supervised/linear-reg/1.png)
 
 * Adjusted R-squared adjusts the R-squared value to account for the number of independent variables used relative to the number of data points.
 
