@@ -12,6 +12,10 @@ categories: notes
 * **SST** = total sum of squared errors
 from using the **base line** prediction
 
+```
+SST = sum( (mean(train$Temp) - test$Temp)^2)
+```
+
 * **SSE** = sum of squared errors
 
 ??? Why SST <= SSE always? 
@@ -31,6 +35,6 @@ measures whether and how strongly pairs of variables are related.
 
 ### Multicolinarality
 refers to the situation when two independent variables are highly correlated (typically |correlation| > 0.7).
-    * Since coefficients are only interpretable in the presence of other variables being used, if a model has many independent variables with high correlation, the significant values of them might be really low. Dropping one of them **one at a time** might increase R<sup>2</sup>. 
+    * Since coefficients are only interpretable in the presence of other variables being used, if a model has many independent variables with high correlation, the significant values of them might be really low when ALL are chosen to predict a dependent variable since including them all is tantamount to multiplying the scale of that feature. Dropping one of them **one at a time** would increase R<sup>2</sup>. 
 
 [1]: https://www.edx.org/course/analytics-edge-mitx-15-071x-3

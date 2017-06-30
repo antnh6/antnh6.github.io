@@ -12,6 +12,7 @@ comments: true
 	* [Decision Tree]() 
 	* [Gaussian Naive Bayes](2017-06-21-gaussian-naive-bayes)
 	* [Neural Networks](2017-06-24-neural-networks)
+	* [k Nearest Neighbors](2017-06-28-knn)
 	* [SVM]()
 2. [Unsupervised](#2015-02-20-test-markdown)
 	* [Clustering](#2017-06-23-blahx3)
