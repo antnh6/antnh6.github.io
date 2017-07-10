@@ -1,11 +1,10 @@
 ---
 layout: page
-title: TODO test file
-subtitle: TODO
-tags: [projects]
+title: TODO
+tags: [todo]
 use-site-title: true
 comments: true
 ---
 
+### WORK IN PROGRESS
 
-TODO

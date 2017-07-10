@@ -12,26 +12,27 @@ For example:
 features_raw['capital_gain'] = data['capital gain'].apply(lambda x: np.log(x + 1))
 ```
 
-### Normalizing Numerical Features
- It is often good practice to perform some type of scaling on numerical features. Applying a scaling to the data does not change the shape of each feature's distribution; however, normalization ensures that each feature is treated equally when applying supervised learners. Note that once scaling is applied, observing the data in its raw form will no longer have the same original meaning, i.e. the values are relative to one another in the same column.
+### Feature Scaling
+It is often good practice to perform some type of scaling on numerical features. Applying a scaling to the data does not change the shape of each feature's distribution; however, normalization ensures that each feature is treated equally when applying supervised learners. Note that once scaling is applied, observing the data in its raw form will no longer have the same original meaning, i.e. the values are relative to one another in the same column.
+ * z-score standardization
+ * min max scaler [(souce)][3]
+Note that not all algorithms will benefit from this type of transformation, such as linear reg, and CART won't.
 
- ```python
+```python
 # Import sklearn.preprocessing.StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 
 # Initialize a scaler, then apply it to the features
 scaler = MinMaxScaler()
-numerical = ['age', 'education-num', 'hours-per-week']
-features_raw[numerical] = scaler.fit_transform(features_raw[numerical])
+numerical = numpy.array([[144.], [155.], [166.]]
+rescaled = scaler.fit_transform(numerical)
+```
 
- ```
- 
-The 'age' column has been normalized to: 
-> 
->|   |age(before)   |age(after) |
->|:---:   |:---:    |:---:    |
->|1 |30   |0.354  | 
->|2 |45   |0.427  |  
+The 'age' column has been normalized to:  
+|   |age(before)   |age(after) |
+|:---:   |:---:    |:---:    |
+|1 |30   |0.354  | 
+|2 |45   |0.427  |  
 
 ### One-hot Encoding Scheme 
 
@@ -46,3 +47,17 @@ Typically, learning algorithms expect input to be numeric, which requires that n
 
 * Use pandas.get_dummies() to perform one-hot encoding 
 
+### Feature Selection
+is used to pick out the best features from a large set of features. Two ways of "picking":
+* Filtering: independent of the learning algorithm and is generally a pre-processing step. This leads to a faster training pipeline but it is possible the features we picked in the pre-processing step doesn't work very well downstream in the actual learning algorithm. Decision tree is sort of a filtering algorithm, so we could use it to find the "optimal" set of features and train the data with those features using the actual learning algo.
+* Wrapping: the subset selection takes place based on the learning algorithm used to train the model itself. Every subset that is proposed by the subset selection measure is evaluated in the context of the learning algorithm. Obviously, this means that computationally intensive learning algorithms cannot be used. Backward and Forward
+
+In sklearn, there are SelectKBest and SelectPercentile
+
+### Relevance vs. Usefulness
+* A feature is strongly relevant if it helps improve/worsen the Bayes Optimal Classifier. A feature is deemed weakly relevant if it is only relevant in a strict subset of all features. 
+* A classifier is Bayes optimal if no other classifier can classify with a lower expected misclassification error.  Essentially it means that all of the classification error is due to genuine noise in the data.[(source)][4]
+* 
+The usefulness of a feature is defined by how useful it is to a *particular* algorithm!
+[3]: http://sebastianraschka.com/Articles/2014_about_feature_scaling.html
+[4]: https://www.quora.com/What-is-meant-by-Bayes-Optimal-solution/answer/Justin-Rising?srid=ugxJO

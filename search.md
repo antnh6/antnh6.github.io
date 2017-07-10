@@ -1,10 +1,11 @@
 ---
-layout: default
-title: "Search my blog"
+layout: page
+subtitle: "Where is it, An?"
 css: "/css/search.css"
 ---
 
-### Using the Amazing Google
+## WORK IN PROGRESS: I still need to figure out how to do sitemap
+### You can search for anything on my site by using this Amazing Google Search
 <div id="google-custom-search">
 <script>
   (function() {
