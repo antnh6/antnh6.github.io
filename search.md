@@ -1,11 +1,13 @@
 ---
 layout: page
-subtitle: "Where is it, An?"
+title: Where is Belize, An?
 css: "/css/search.css"
 ---
 
-## WORK IN PROGRESS: I still need to figure out how to do sitemap
+## WORK IN PROGRESS
 ### You can search for anything on my site by using this Amazing Google Search
+
+The bad joke above is from Breaking Bad in case you're wondering.
 <div id="google-custom-search">
 <script>
   (function() {
