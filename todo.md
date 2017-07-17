@@ -15,4 +15,5 @@ comments: true
 4. Figure out how to do RSS and subscription
 5. Learn to link Mathjax to type math in the future
 6. Learn to embed webhighligting and inline commenting
+7. Group tags for searching
 

@@ -54,6 +54,8 @@ is used to pick out the best features from a large set of features. Two ways of 
 
 In sklearn, there are SelectKBest and SelectPercentile
 
+### Feature Transformation
+refer to PCA/ICA 
 ### Relevance vs. Usefulness
 * A feature is strongly relevant if it helps improve/worsen the Bayes Optimal Classifier. A feature is deemed weakly relevant if it is only relevant in a strict subset of all features. 
 * A classifier is Bayes optimal if no other classifier can classify with a lower expected misclassification error.  Essentially it means that all of the classification error is due to genuine noise in the data.[(source)][4]
