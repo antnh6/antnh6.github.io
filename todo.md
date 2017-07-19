@@ -42,4 +42,10 @@ comments: true
 |23| Do a full split| |
 |24| Read 25 Pages of Non-Fiction Per Day for Three Months in a row [(inspiration)](https://collegeinfogeek.com/25pages/)| |
 |25| Graduate with above 80% CAV | |
-|26| Learn a deck of cards in under 1 min| |
+|26| Learn a deck of cards in under 2 min| |
+
+
+
+
+<!-- |27| Type at 100 wpm | |  -->
+<!-- |28| Solve a Rubik's cube in 3 min| | -->

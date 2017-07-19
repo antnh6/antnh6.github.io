@@ -5,6 +5,8 @@ tags: [reinforcement-learning]
 categories: notes
 --- 
 
+- No supervisor, only reward signal
+- Feedback is delayed, not instantaneous
 
 ### Markov Decision Process
 Markovian Property =  the present state contains all the info you'd need

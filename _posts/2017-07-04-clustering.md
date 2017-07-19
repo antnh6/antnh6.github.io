@@ -4,13 +4,17 @@ title: Clustering
 tags: [unsupervised]
 categories: notes
 ---
+
+
 ### Definition
 There are many types of Clustering:
 * K-Means (typically does a better job of identifying partially overlapping clusters)
     ![img]
 * Hierachial 
     * Single-linkage is the most popular form of this type
-* [Soft Clustering (Expectation Maximization)](2017-07-13-soft-clustering)
+* [Soft Clustering (Expectation Maximization)](http://annwin.me/notes/2017-07-13-softclustering/)
+
+### Collaborative vs. Content Filtering
 
 ### Why Clustering is hard [(source)][1]
 * All of the aforementioned approaches are very computationally difficult to solve exactly for large datasets => As a result, we often resort to optimization heuristics that may or may not produce reasonable results.
@@ -47,3 +51,4 @@ When the number of clusters is not known a priori, there is no guarantee that a 
 [1]: http://alexhwilliams.info/itsneuronalblog/2015/09/11/clustering1/
 [2]:http://alexhwilliams.info/itsneuronalblog/2015/10/01/clustering2/ 
 [3]:http://alexhwilliams.info/itsneuronalblog/2015/11/18/clustering-is-easy/
+

@@ -4,7 +4,7 @@ title: Linear Regression
 tags: [supervised, machine-learning]
 categories: notes
 ---
-
+to do regression
 ### Terminology
 
 **Baseline prediction** In order to find out your learning algorithm is any good, you will typically measure performance in one way or another. Say, you get 75% accuracy. But is it any good? You can infer this meaning by comparing with a baseline's performance. A baseline is a method that uses heuristics, simple summary statistics, randomness, or machine learning to create predictions for a dataset. You can use these predictions to measure the baseline's performance (e.g., accuracy)-- this metric will then become what you compare any other machine learning algorithm against[(source)][3].
