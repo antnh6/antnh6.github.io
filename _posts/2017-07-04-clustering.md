@@ -10,7 +10,7 @@ categories: notes
 There are many types of Clustering:
 * K-Means (typically does a better job of identifying partially overlapping clusters)
     ![img]
-* Hierachial 
+* Hierachial (no need to select number clusters a priori, but hard to use with large datasets because of pair-wise distance calculation)
     * Single-linkage is the most popular form of this type
 * [Soft Clustering (Expectation Maximization)](http://annwin.me/notes/2017-07-13-softclustering/)
 

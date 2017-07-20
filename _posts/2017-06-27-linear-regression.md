@@ -4,10 +4,10 @@ title: Linear Regression
 tags: [supervised, machine-learning]
 categories: notes
 ---
-to do regression
 ### Terminology
+**Linear Regression** is a method to predict a continuous outcome with the assumption that the relationship of the outcome and the independent variables is linear.
 
-**Baseline prediction** In order to find out your learning algorithm is any good, you will typically measure performance in one way or another. Say, you get 75% accuracy. But is it any good? You can infer this meaning by comparing with a baseline's performance. A baseline is a method that uses heuristics, simple summary statistics, randomness, or machine learning to create predictions for a dataset. You can use these predictions to measure the baseline's performance (e.g., accuracy)-- this metric will then become what you compare any other machine learning algorithm against[(source)][3].
+**Baseline prediction** In order to find out your learning algorithm is any good, you will typically measure performance in one way or another. Say, you get 75% accuracy. But is it any good? You can infer this meaning by comparing with a baseline's performance. A baseline is a method that uses heuristics, simple summary statistics, randomness, or machine learning to create predictions for a dataset. You can use these predictions to measure the baseline's performance (e.g., accuracy)-- this metric will then become what you compare any other machine learning algorithm against [(source)][3].
 
 **SST** = total sum of squared errors from using the **baseline** prediction from the training set
 ```
@@ -40,7 +40,7 @@ Remember to convert numeric variable such as Month to factor variable because we
 
 ### Multicolinarality
 refers to the situation when two independent variables are highly correlated (typically |correlation| > 0.7).
-    * Since coefficients are only interpretable in the presence of other variables being used, if a model has many independent variables with high correlation, the significant values of them might be really low when ALL are chosen to predict a dependent variable since including them all is tantamount to multiplying the scale of that feature. Dropping one of them **one at a time**(with the one with the largest "p-value" being removed first, or , or the one with the "t value" closest to zero) would increase R<sup>2</sup>. 
+* Since coefficients are only interpretable in the presence of other variables being used, if a model has many independent variables with high correlation, the significant values of them might be really low when ALL are chosen to predict a dependent variable since including them all is tantamount to multiplying the scale of that feature. Dropping one of them **one at a time** (with the one with the largest "p-value" being removed first, or the one with the "t value" closest to zero) would increase R<sup>2</sup>. 
 
 [1]: https://www.edx.org/course/analytics-edge-mitx-15-071x-3
 [2]: https://stats.stackexchange.com/a/29326/165795

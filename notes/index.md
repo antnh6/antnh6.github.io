@@ -22,7 +22,7 @@ comments: true
 		* [Soft Clustering](2017-07-13-softclustering)
 	* [PCA/ICA](2017-07-09-pca)
 3. Semisupervised
-4. [Reinforcement Learning](2017-07-13-reinforcement)
+4. [Reinforcement Learning](2017-07-12-reinforcement)
 5. Miscellaneous
 	* [Text Analytics](2017-07-12-text-analytics)
 	* [Data Preprocessing](2017-06-26-preprocessing)
