@@ -14,6 +14,7 @@ There are many types of Clustering:
     * Single-linkage is the most popular form of this type
 * [Soft Clustering (Expectation Maximization)](http://annwin.me/notes/2017-07-13-softclustering/)
 
+Clustering can also be used to segment data before doing predictions with supervised algorithms for better accuracy. In this case, remove the dependent variable before clustering because if we use the outcome value to cluster, we might conclude your method strongly outperforms a non-clustering alternative. However, this is because it is using the outcome to determine the clusters, which is not valid. See this [analysis]()
 ### Collaborative vs. Content Filtering
 
 ### Why Clustering is hard [(source)][1]
@@ -40,6 +41,7 @@ As it turns out, such function does not exist IRL (**Kleinberg’s Impossibility
     * **some-fraction-of-max-distance-between-any-two-points** stopping condition does not satisfy consistency
 
 Nevertheless, there are ways to circumvent this Impossibility Theorem, but more importantly are all 3 axioms even desirable all the time? The axioms serve more as a reality check for us to not be too demanding of what a clustering function can do for us. 
+
 
 ### TOREAD
 * http://www.cs.fsu.edu/~ackerman/thesisPhD.pdf

@@ -7,14 +7,6 @@ use-site-title: true
 comments: true
 ---
 
-<!-- 1. Figure out how to do sitemap for searching
-2. Fix the padding around <h1> tag and body text
-3. Add navgoco maybe?
-4. Figure out how to do RSS and subscription
-5. Learn to link Mathjax to type math in the future
-6. Learn to embed webhighligting and inline commenting
-7. Group tags for searching -->
-
 | | TODO | PROGRESS | 
 | |:-------:|:------:|:---:|
 |1| Hold a plank for 5 minutes |  |  

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reinforcement Learning
-tags: [reinforcement-learning]
+title: MDP & Reinforcement Learning
+tags: [mdp, reinforcement-learning]
 categories: notes
 --- 
 
@@ -20,11 +20,11 @@ A MDP includes:
 - Set of states S
 - Start state s<sub>0</sub>
 - Set of actions A
-- Transitions T(s',s,a) or P(s'\|s,a) the probability of landing in state s' after taking action a in state s
+- Transitions T(s',s,a) or P(s'\|s,a) the probability of landing in state s' after taking action a from state s. Transitions are also called model, dynamics.
 - Rewards R(s,a,s') and discount \\( \gamma \\)
 
 ### Goal of MDP
-is to return a **policy** (a choice of action for each state). An **optimal** policy would maximize the sum of discounted rewards (utility), thus depending on the reward for each state.
+is to return a **policy** (a choice of action for each state). An **optimal** policy, denoted \\( \pi \\)* would maximize the sum of discounted rewards (utility), thus depending on the reward for each state.
 <p align="center">
   <img src="../../img/post-img/reinforcement/3.png" height="70%" width="70%">
 </p>
@@ -41,10 +41,46 @@ is to return a **policy** (a choice of action for each state). An **optimal** po
     <p align="center">
         <img src="../../img/post-img/reinforcement/5.png" height="90%" width="90%">
     </p>
-- It's the only thing we have that works when we assume **stationary** preferences (once the optimal policy is found, it's forever optimal regardless of when it's used) 
+- It's the only thing we have that works **if** we assume **stationary** preferences (once the optimal policy is found, it's forever optimal regardless of when it's used). However, that does not mean our preferences always have to be stationary.
     <p align="center">
         <img src="../../img/post-img/reinforcement/6.png" height="90%" width="90%">
     </p>
 
+### Solving MDPs
+#### Important Terminology
+- **Q\*(s,a)** is the average over value of a state after you've performed action a then acting optimally from there onward. For example, you're a robot in a Grid World. You want to move East, but will only land on the East state with 0.8 probability; 0.1 probability you will land on the other perpendicular States (North and South). Q*(State you're on, East) will be the average (discounted*Value + Reward(next State)) over all possible next States (East, North, and South in this case). 
+- V\*(s) is is expected max of all possible Q(s, i.e. for each state, you'd have a bunch of Q-values, V(s) would be the max among them. Continuing on the above example, V*(s) would be the max among Q*(s, East), Q*(s, West), Q*(s,North), and Q*(s, South).
+- Note that * here denotes that we are following the optimal policy. It could be substituted with \\( \pi \\) to mean some specific policy (need not be optimal). For example, Q<sup>\\( \pi \\)</sup>
+
+#### Bellman Equation
+has recursive relation
+
+
+#### Policy Evaluation 
+#### Policy Iteration 
+consists of Policy Evaluation (to figure out the values) and One-Step-Look ahead (to actually update the policy)
+- Achieves the exact same thing that Value Iteration does, but numberOfActions faster because at each State
+
+### Reinforcement Learning
+The distinction between MDP and RL is that IRL we are not given the transitions or rewards for next state beforehand. We have to actually **act** to learn those probabilities. 
+<p align="center">
+    <img src="../../img/post-img/reinforcement/8.png" height="90%" width="90%">
+</p>
+ There are two approaches to the issue: 
+
+| |Model-based | Model-free |	
+|:---:|:---:|:---:|
+|**Overview**| Step 1: Learn and formulate an empirical MDP model from experiences
+| |Step 2: Solve for values as if the model was correct|
+|**Limitations**|- It's hard to draw the line where to stop learning and start solving | 	|
+| |- We'd only know what we have experienced | 
+|**Example**| <img src="../../img/post-img/reinforcement/9.png"> | 
+
+### Passive RL
+#### Direct Evaluation
+Every time you enter a state, record the Value for that State. After acting for quite some time over many episodes, you'd get the average and that's the value for each state under some policy. Why does this work? Same way the things that have higher weight in the transitions would occur more often in the episodes and things work out.
+
+
+?? wtheck man lose state connections
 
 [1]: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf
