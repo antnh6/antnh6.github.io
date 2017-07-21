@@ -15,7 +15,7 @@ categories: notes
         <img src="../../img/post-img/reinforcement/7.png" height="90%" width="90%">
 </p> [(source)][1]
 
-### Markov Decision Process
+### Markov Decision Process (MDP)
 A MDP includes: 
 - Set of states S
 - Start state s<sub>0</sub>
@@ -23,8 +23,8 @@ A MDP includes:
 - Transitions T(s',s,a) or P(s'\|s,a) the probability of landing in state s' after taking action a from state s. Transitions are also called model, dynamics.
 - Rewards R(s,a,s') and discount \\( \gamma \\)
 
-### Goal of MDP
-is to return a **policy** (a choice of action for each state). An **optimal** policy, denoted \\( \pi \\)* would maximize the sum of discounted rewards (utility), thus depending on the reward for each state.
+### Goal of a MDP
+is to return a **policy** (a choice of action for each state). An **optimal** policy, denoted \\( \pi \\)* would maximize the sum of discounted rewards (**utility**), thus depending on the reward for each state.
 <p align="center">
   <img src="../../img/post-img/reinforcement/3.png" height="70%" width="70%">
 </p>
@@ -48,13 +48,12 @@ is to return a **policy** (a choice of action for each state). An **optimal** po
 
 ### Solving MDPs
 #### Important Terminology
-- **Q\*(s,a)** is the average over value of a state after you've performed action a then acting optimally from there onward. For example, you're a robot in a Grid World. You want to move East, but will only land on the East state with 0.8 probability; 0.1 probability you will land on the other perpendicular States (North and South). Q*(State you're on, East) will be the average (discounted*Value + Reward(next State)) over all possible next States (East, North, and South in this case). 
-- V\*(s) is is expected max of all possible Q(s, i.e. for each state, you'd have a bunch of Q-values, V(s) would be the max among them. Continuing on the above example, V*(s) would be the max among Q*(s, East), Q*(s, West), Q*(s,North), and Q*(s, South).
-- Note that * here denotes that we are following the optimal policy. It could be substituted with \\( \pi \\) to mean some specific policy (need not be optimal). For example, Q<sup>\\( \pi \\)</sup>
+- **Q\*(s,a)** is the average utility over all possible states s' that you can fall in after performing action a from current state s, then acting optimally from s' onward. For example, you're a robot in a Grid World. You want to move East, but will only land on the East state with 0.8 probability, 0.1 probability you will land on the other perpendicular States (North and South). Q\*(s, East) will be the average (discounted*Value + Reward(next State)) over all possible next States (East, North, and South in this case). 
+- **V\*(s)** is is the expected max among all Q\*(s,a) i.e. for each state, you'd have a bunch of Q-values, V\*(s) would be the max among them. Continuing on the above example, V\*(s) would be the max among Q*(s, East), Q\*(s, West), Q\*(s,North), and Q\*(s, South).
+- Note that **\*** here denotes that we are following the optimal policy. It could be substituted with \\( \pi \\) to mean some specific policy (need not be optimal) that looks like this Q<sup>\\( \pi \\)</sup>(s,a).
 
 #### Bellman Equation
-has recursive relation
-
+aka Value Iteration
 
 #### Policy Evaluation 
 #### Policy Iteration 
@@ -78,9 +77,8 @@ The distinction between MDP and RL is that IRL we are not given the transitions 
 
 ### Passive RL
 #### Direct Evaluation
-Every time you enter a state, record the Value for that State. After acting for quite some time over many episodes, you'd get the average and that's the value for each state under some policy. Why does this work? Same way the things that have higher weight in the transitions would occur more often in the episodes and things work out.
+Every time you enter a state, record the Value for that State. After acting for quite some time over many episodes, you'd get the average and that's the value for each state under some policy. Why does this work?Same way things that have higher weight in the transitions would occur more often in the episodes.
 
-
-?? wtheck man lose state connections
+?? state connections
 
 [1]: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf
