@@ -3,7 +3,32 @@ layout: post
 title: MDP & Reinforcement Learning
 tags: [mdp, reinforcement-learning]
 categories: notes
+use-math: true
 --- 
+<!-- TOC -->
+
+- [Deterministic vs. Stochastic Processes](#deterministic-vs-stochastic-processes)
+- [The "Markov" Property](#the-markov-property)
+- [Markov Decision Process (MDP)](#markov-decision-process-mdp)
+- [Goal of MDPs](#goal-of-mdps)
+- [Discount \\( \gamma \\) is nice because](#discount-\\-\gamma-\\-is-nice-because)
+- [Solving MDPs](#solving-mdps)
+    - [Important Terminology](#important-terminology)
+    - [Bellman Equation](#bellman-equation)
+- [Reinforcement Learning](#reinforcement-learning)
+    - [Model-based](#model-based)
+- [Passive RL](#passive-rl)
+    - [Direct Evaluation (how is this related to passive RL)](#direct-evaluation-how-is-this-related-to-passive-rl)
+- [Model-free](#model-free)
+    - [Temporal Difference Learning (Value Learning)](#temporal-difference-learning-value-learning)
+    - [Active RL (Q-learning)](#active-rl-q-learning)
+- [How to pick actions](#how-to-pick-actions)
+- [Game Theory](#game-theory)
+    - [MiniMax = MaxiMin](#minimax--maximin)
+    - [Von Neumann algorithm](#von-neumann-algorithm)
+- [Nash Equilibrium (Non-Zero Sum)](#nash-equilibrium-non-zero-sum)
+- [Stochastic Games](#stochastic-games)
+
 
 ### Deterministic vs. Stochastic Processes 
 <p align="center">
@@ -15,7 +40,11 @@ categories: notes
         <img src="../../img/post-img/reinforcement/7.png" height="90%" width="90%">
 </p> [(source)][1]
 
-### Markov Decision Process (MDP)
+
+### Markov Decision Process (MDP) 
+
+<a name="mdp"></a>
+
 A MDP includes: 
 - Set of states S
 - Start state s<sub>0</sub>
@@ -23,8 +52,8 @@ A MDP includes:
 - Transitions T(s',s,a) or P(s'\|s,a) the probability of landing in state s' after taking action a from state s. Transitions are also called model, dynamics.
 - Rewards R(s,a,s') and discount \\( \gamma \\)
 
-### Goal of a MDP
-is to return a **policy** (a choice of action for each state). An **optimal** policy, denoted \\( \pi \\)* would maximize the sum of discounted rewards (**utility**), thus depending on the reward for each state.
+### Goal of MDPs
+is to return an optimal **policy** (a choice of action for each state). An **optimal** policy, denoted \\( \pi \\)* would maximize the sum of discounted rewards(**utility**), ie long term rewards over instaneous. 
 <p align="center">
   <img src="../../img/post-img/reinforcement/3.png" height="70%" width="70%">
 </p>
@@ -53,32 +82,128 @@ is to return a **policy** (a choice of action for each state). An **optimal** po
 - Note that **\*** here denotes that we are following the optimal policy. It could be substituted with \\( \pi \\) to mean some specific policy (need not be optimal) that looks like this Q<sup>\\( \pi \\)</sup>(s,a).
 
 #### Bellman Equation
-aka Value Iteration
+If we know the MDP, then we can always apply **Value Iteration** to compute V*, Q\*, \\( \pi \\)\* exactly and **Policy Evaluation** to get the value for each state under a fixed policy.
 
-#### Policy Evaluation 
-#### Policy Iteration 
 consists of Policy Evaluation (to figure out the values) and One-Step-Look ahead (to actually update the policy)
 - Achieves the exact same thing that Value Iteration does, but numberOfActions faster because at each State
 
-### Reinforcement Learning
-The distinction between MDP and RL is that IRL we are not given the transitions or rewards for next state beforehand. We have to actually **act** to learn those probabilities. 
+<a name="rl"></a>
+
+### Reinforcement Learning 
+
+IRL we are not given the transitions or rewards for each state beforehand. That is we do NOT know the MDP. We have to actually **act** to learn those probabilities. 
 <p align="center">
     <img src="../../img/post-img/reinforcement/8.png" height="90%" width="90%">
 </p>
- There are two approaches to the issue: 
 
-| |Model-based | Model-free |	
-|:---:|:---:|:---:|
-|**Overview**| Step 1: Learn and formulate an empirical MDP model from experiences
-| |Step 2: Solve for values as if the model was correct|
-|**Limitations**|- It's hard to draw the line where to stop learning and start solving | 	|
-| |- We'd only know what we have experienced | 
-|**Example**| <img src="../../img/post-img/reinforcement/9.png"> | 
+There are two approaches to the issue: 
+- Model-based
+- Model-free 	
+
+#### Model-based
+- **Overview**
+> Step 1: Learn and formulate an empirical MDP model from experiences
+> <br>
+> Step 2: Solve for values as if the model was correct
+- **Limitations**
+> It's hard to draw the line where to stop learning and start solving
+> <br>
+> We'd only know what we have experienced 
+
+- **Example** 
+<p align="center">
+    <img src="../../img/post-img/reinforcement/9.png" height="90%" width="90%">
+</p>
 
 ### Passive RL
-#### Direct Evaluation
-Every time you enter a state, record the Value for that State. After acting for quite some time over many episodes, you'd get the average and that's the value for each state under some policy. Why does this work?Same way things that have higher weight in the transitions would occur more often in the episodes.
+Similar to watching and learning from another robot = fixed policy, unknown rewards, unknown transitions
+#### Direct Evaluation (how is this related to passive RL)
+Since we don't have the rewards and transitions, we'll just run through the Grid World multiple times and record the Value for each State every time. After acting for quite some time over many episodes, you'd get the average and that's the value for each state. Why does this work? Same way things that have higher weight in the transitions would occur more often in the episodes.
 
 ?? state connections
+
+<p align="center">
+    <img src="../../img/post-img/reinforcement/10.png" height="90%" width="90%">
+</p>
+
+Limitations:
+- We assume that we can revisit s many times 
+
+### Model-free
+
+#### Temporal Difference Learning (Value Learning)
+Key idea: a model-free way to do policy evaluation by mimicking Bellman to update running sample average.
+=> Still under fixed policy, update the value while we are running => **running average** (introducing \\( \alpha \\), learning rate)
+<p align="center">
+    <img src="../../img/post-img/reinforcement/11.png" height="90%" width="90%">
+</p>
+ which is usally about 0.1 so recently obtained values weigh more than old ones. Using this method, we would only need to update state value for the state we've just left and it only.
+<p align="center">
+    <img src="../../img/post-img/reinforcement/12.png" height="90%" width="90%">
+</p>
+
+Example:
+<p align="center">
+    <img src="../../img/post-img/reinforcement/13.png" height="90%" width="90%">
+</p>
+
+Limitations:
+- We've now computed the state values, but still cannot infer which action to do at each state. In order to get actions, we need the one-step look ahead step (aka Q-value)
+
+#### Active RL (Q-learning)
+- Still don't know transactions and rewards
+- BUT get to choose actions now
+- To learn optimal policy and state values
+
+
+<p align="center">
+    <img src="../../img/post-img/reinforcement/13.png" height="90%" width="90%">
+</p>
+
+### How to pick actions
+- do some fixed set of actions every time => won't learn
+- randomly => won't use what it's learnt
+- random start once it gets low Q-value => reinforce local min
+Solution: **Exploration vs. Exploitation** using \\( \epsilon \\)-greedy algorithm (**simulated annealing**)
+
+### Game Theory
+A game tree can also be represented as a matrix
+#### MiniMax = MaxiMin 
+There always exists an *optimal **pure strategy** for each player in a game with
+- 2-player
+- zero-sum
+- deterministic 
+- perfect information
+
+with **optimal** being defined as everyone is trying to maximize their own reward
+
+#### Von Neumann algorithm 
+non-deterministic
+
+hidden info, i.e. info is not avail to all players => mixed strategies
+ex: mini poker game
+<p align="center">
+    <img src="../../img/post-img/reinforcement/14.png" height="90%" width="90%">
+</p>
+
+Because everyone is acting rationally, in order to maximize with the mixed strategy, A would have to go with P = 0.4
+<p align="center">
+    <img src="../../img/post-img/reinforcement/15.png" height="50%" width="50%">
+</p>
+
+### Nash Equilibrium (Non-Zero Sum)
+Given that you have a set of strategies \\( S_1^* \\)$,\\(S_2^* \\),\\(S_3^* \\), ...,\\(S_n^*\\) we know that they are in (John) Nash Equilibrium iff allowing a chance to switch strategies, a random player would have no reason to do it.
+
+If the number of players and strategies are finite, then there always exists at least one Nash Equilibrium.
+<p align="center">
+    <img src="../../img/post-img/reinforcement/16.png" height="70%" width="70%">
+</p>
+n games => n repeated N.E.
+
+### Stochastic Games
+
+### TODO 
+try running GridWorld yourself
+
 
 [1]: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf

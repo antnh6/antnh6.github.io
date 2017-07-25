@@ -11,6 +11,7 @@ Resources I used to make this blog using Jekyll, and Github Pages:
 - To implement Mathjax with Jekyll http://gastonsanchez.com/visually-enforced/opinion/2014/02/16/Mathjax-with-jekyll/
 
 TODO: 
+0. URGENT! Figure out how to preview MathJax in VScode
 1. Figure out how to do sitemap for searching
 2. Fix the padding around &lt;h1&gt; tag and body text
 3. Add navgoco maybe?
