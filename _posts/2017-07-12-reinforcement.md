@@ -28,7 +28,7 @@ use-math: true
     - [Von Neumann algorithm](#von-neumann-algorithm)
 - [Nash Equilibrium (Non-Zero Sum)](#nash-equilibrium-non-zero-sum)
 - [Stochastic Games](#stochastic-games)
-
+- [Uninformed Search]
 
 ### Deterministic vs. Stochastic Processes 
 <p align="center">
@@ -66,7 +66,7 @@ is to return an optimal **policy** (a choice of action for each state). An **opt
 </p>
 - It allows us to work with infinite horizons. Imagine two sequence of rewards that go on forever, cumulating the totals to infinity. It would not be possible to compare which sequence is better, because we cannot compare infinity. 
     * One way to fix this is to set a finite number of steps at which we stop the process. BUT this solution would give nonstationary policies (i.e. depending on the number of steps left, the policy might change)
-    * Another way is to use the discount $$ \gamma $$ (usually has value within 0 and 1) that would converge the total to a finite amount (Geometric series) that we can then use to determine which sequence is better.
+    * Another way is to use the discount <!--$$ \gamma $$--> ![](_posts/images/LaTeX/ae539dfcc999c28e25a0f3ae65c1de79.svg) (usually has value within 0 and 1) that would converge the total to a finite amount (Geometric series) that we can then use to determine which sequence is better.
     <p align="center">
         <img src="../../img/post-img/reinforcement/5.png" height="90%" width="90%">
     </p>
@@ -202,8 +202,49 @@ n games => n repeated N.E.
 
 ### Stochastic Games
 
+
+### Uninformed Search
+
+**World State** = all possible configurations of the world
+**State space**
+
+Solving search problems
+- State space graphs (a math concept that this problem can be solved by drawing out all the configurations lol)
+- Search trees 
+
+Search algorithm properties:
+- Optimal: least cost path
+- Complete
+- Time complexity 
+- Space complexity 
+
+### Cost = 1
+DFS 
+- LIFO stack
+- Time complexity O(\\(b^m\\))
+- Space complexity O(\\(b*m\\))
+- Optimal: not guaranteed
+- Works better when solution is deep + to the left
+
+BFS
+- FIFO queue
+- Time complexity O($$b^s$$) 
+- Space complexity O($$b^s$$)
+- Optimal: yes if cost = 1
+- Works better when solution is shallow + to the right and in most cases
+
+Iterative Deepening
+DFS with a twist that exploits the space complexity of DFS and time of BFS
+
+### When cost is involved 
+Uniform Cost Search is similar to BFS, but it does return the least cost path
+- priority queue
+- hmm i still need to understand this
+
+
 ### TODO 
 try running GridWorld yourself
 
+Cost-sensitive Search
 
 [1]: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf

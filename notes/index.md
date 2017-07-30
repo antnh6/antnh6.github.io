@@ -5,7 +5,7 @@ subtitle: These are my notes on what I've learned about Machine Learning and Dat
 comments: true
 ---
 
-# Table of contents
+# Contents
 
 1. Supervised
 	* [Linear Regression](2017-06-27-linear-regression)
@@ -14,6 +14,8 @@ comments: true
 	* [Decision Tree](2017-07-04-tree) 
 	* [Gaussian Naive Bayes](2017-06-21-gaussian-naive-bayes)
 	* [Neural Networks](2017-06-24-neural-networks)
+		* [Deep NN](2017-07-27-deepnn)
+		* [Convolutional NN](2017-07-27-cnn)
 	* [k-Nearest Neighbors](2017-06-28-knn)
 	* [SVM](2017-06-28-svm)
 2. Unsupervised

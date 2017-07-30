@@ -22,3 +22,15 @@ categories: notes
 * np.**percentile**(feature,percentile)
 
 * data.**drop**(data.index[outliers]).reset_index(drop = True) to drop rows with those indices in outliers 
+
+
+## Keras
+### CNN
+- Conv2D
+    * **filters** = numFilters
+    * **kernel_size** = tuple of height and width of filter
+    * **strides** = default to 1
+    * **padding** = default to "valid":no, another options is "same"
+    * **activation** = default to "relu"
+    * **input_shape** = tuple of height, width, depth of first hidden layer
+    * Flatten
