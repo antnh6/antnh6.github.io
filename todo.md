@@ -26,7 +26,7 @@ comments: true
 |15| Volunteer for a shelter for at least a year | Did 6 months before I had to move at my last shelter |
 |16| Live in Europe for at least 6 months | |
 |17| Win 5 Escape Rooms | |
-|18| Watch Top 250 IMDb | at 49/250, most recently watched: Hacksaw Ridge|
+|18| Watch Top 250 IMDb | at 50/250, most recently watched: No Country for Old Men|
 |19| Become blue on TopCoder| |
 |20| Obtain dual citizenship with another country|
 |21| Post a Kpop cover dance on Youtube|
