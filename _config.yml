@@ -26,14 +26,14 @@ navbar-links:
   Blog: "https://medium.com/@antnh6"
   TODO List: "todo"
   Notes: 
-    - Machine Learning: "notes"
+    - Interests: "notes"
     - Course Notes: "courses"
-    - Misc.: "misc"
+    # - Misc.: "misc"
   Projects: "projects"
   Contact:
+    - Resources: "resources"
     - GitHub: "https://github.com/antnh6"
     - Twitter: "http://twitter.com/antnh6"
-    - Resources: "resources"
     - Subscribe: "subscribe"
 #  Résumé: "https://medium.com/@antnh6"
 nav-search: "search"

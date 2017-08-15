@@ -1,0 +1,39 @@
+{
+  "isShellCommand": true,
+  "suppressTaskName": true,
+  "osx": {
+    "command": "/usr/local/bin/node"
+  },
+  "linux": {
+    "command": "{
+  "isShellCommand": true,
+  "suppressTaskName": true,
+  "osx": {
+    "command": "/usr/local/bin/node"
+  },
+  "linux": {
+    "command": "/usr/bin/nodejs"
+  },
+  "windows": {
+    "command": "C:\\Program Files\\nodejs\\node.exe"
+  },
+  "tasks": [
+    {
+      "taskName": "node",
+      "args": ["${file}"],
+      "isBuildCommand": true
+    }
+  ]
+}"
+  },
+  "windows": {
+    "command": "C:\\Program Files\\nodejs\\node.exe"
+  },
+  "tasks": [
+    {
+      "taskName": "node",
+      "args": ["${file}"],
+      "isBuildCommand": true
+    }
+  ]
+}

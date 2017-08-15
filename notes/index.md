@@ -1,11 +1,13 @@
 ---
 layout: page
-title: "ML + Data Sci"
-subtitle: These are my notes on what I've learned about Machine Learning and Data Science.
+title: Interests
+
 comments: true
 ---
 
-# Contents
+Outside of school, I try to learn more about AI and Machine Learning, and keep these notes up-to-date with my current understanding of each topic.
+
+### Contents
 
 1. Supervised
 	* [Linear Regression](2017-06-27-linear-regression)
@@ -13,7 +15,7 @@ comments: true
 	* Linear Discriminant Analysis
 	* [Decision Tree](2017-07-04-tree) 
 	* [Gaussian Naive Bayes](2017-06-21-gaussian-naive-bayes)
-	* [Neural Networks](2017-06-24-neural-networks)
+	* Neural Networks
 		* [Deep NN](2017-07-27-deepnn)
 		* [Convolutional NN](2017-07-27-cnn)
 	* [k-Nearest Neighbors](2017-06-28-knn)
@@ -25,9 +27,14 @@ comments: true
 	* [PCA/ICA](2017-07-09-pca)
 3. Semisupervised
 4. [Reinforcement Learning](2017-07-12-reinforcement)
+5. AI Topics
+	* [Search Problems](2017-08-01-searchproblems)
+		* [Constraint Satisfaction Problems](2017-08-05-csp)
+		* [Adversarial Search](2017-08-12-adversarial)
 5. Miscellaneous
+	* [R Cheat Sheet](2017-06-26-r-cmds)
+	* [Python Cheat Sheet](2017-06-26-python-cmds)
 	* [Text Analytics](2017-07-12-text-analytics)
 	* [Data Preprocessing](2017-06-26-preprocessing)
-	* [Useful R commands](2017-06-26-r-cmds)
-	* [Useful Python commands](2017-06-26-useful-python-cmds)
+
 	

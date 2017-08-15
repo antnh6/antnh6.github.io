@@ -6,8 +6,8 @@ categories: notes
 use-math: true
 --- 
 - [Markov Decision Process (MDP)](#markov-decision-process-mdp)
-        - [Deterministic vs. Stochastic Processes](#deterministic-vs-stochastic-processes)
-        - [The "Markov" Property](#the-markov-property)
+    - [Deterministic vs. Stochastic Processes](#deterministic-vs-stochastic-processes)
+    - [The "Markov" Property](#the-markov-property)
     - [Goal of MDPs](#goal-of-mdps)
     - [Discount \\( \gamma \\) is nice because](#gamma)
     - [Important Terminology](#important-terminology)
@@ -18,16 +18,11 @@ use-math: true
     - [1. Model-based](#1-model-based)
     - [2. Model-free](#2-model-free)
         - [Passive RL](#passive-rl)
-            -[Direct Evaluation]()
-            -[Temporal Difference Learning]()
-        - [Active RL (Q-learning)](#active-rl-q-learning)
+            - [Direct Evaluation]()
+            - [Temporal Difference Learning]()
+        - [Active RL](#active-rl)
             - [Q-learning](#q-learning)
-<!--         - [How to pick actions](#how-to-pick-actions)
-        - [Uninformed Search](#uninformed-search)
-        - [Cost = 1](#cost-1)
-        - [When cost is involved](#when-cost-is-involved)
-        - [TODO](#todo)
-        - [References](#references) -->
+            - [Value-learning](#value-learning)
 
 # Markov Decision Process (MDP) 
 A MDP includes: 
@@ -43,7 +38,6 @@ A MDP includes:
 </p>
 
 ### The "Markov" Property 
-[^1]
 <p align="center">
         <img class = "img-responsive" src="../../img/post-img/reinforcement/7.png" height="60%" width="60%">
 </p>
@@ -138,7 +132,7 @@ In real life, we are not given the transitions or rewards beforehand. That is we
 There are two approaches to the issue:
 
 ## 1. Model-based
-- **Algorithm **
+- **Algorithm**
 1. Learn and formulate an empirical/approx. MDP model from experiences
     - Estimate P(s,a,s')
     - Discover R(s,a,s')
@@ -188,69 +182,44 @@ a model-free way to do Policy Evaluation
 
 However, we still cannot infer actions from these values because the transitions are still unknown. 
 
-### Active RL (Q-learning)
+### Active RL
 We still don't know the transactions and rewards BUT get to choose actions now (no fixed policy). Goal is to learn the state values AND the optimal policy.
 #### Q-learning
 to compute $$V^*$$, $$Q^*$$, $$\pi^*$$
     \begin{equation}
         Q_{k+1}(s,a) \leftarrow \sum_{s'}P(s,a,s')[R(s,a,s') + \gamma\max_{a'}Q_{k}(s',a')]
     \end{equation}
+- **Overview**:
+    1. Receive a sample transition (s,a,r,s')
+    2. This sample suggests 
+    \begin{equation}
+        Q(s,a) \approx r + \gamma\max_{a'}Q(s',a')
+    \end{equation}
+    3. Average over samples from (s,a) by keeping a running average
+    \begin{equation}
+        Q(s,a) \leftarrow (1 - \alpha)Q(s,a) + \alpha[r + \gamma\max_{a'}Q(s',a')]
+    \end{equation}
+- **Off-policy learning** The great thing about Q-learning is that we can still learn the optimal policy while behaving suboptimally every now and then, compared to other techniques aforementioned in which one suboptimal move affects the state values directly. See [demo]().
+- Caveats: keep learning rate small but not decreasing too quickly
+- **Schemes for forcing exploration**
+    - **$$\epsilon$$-greedy**
+        - At every time step, flip a coin
+        - With (small) probability $$\epsilon$$, act randomly
+        - With (high) probability $$1-\epsilon$$, act on current policy
+        - Lower $$\epsilon$$ over time to avoid unnecessary explorations once learning is done
+        Simply speaking, it means when choosing the best action, select the best action with a probability of (1 - $$\epsilon$$) and a random action with a probability of $$\epsilon$$. When we decay $$\epsilon$$, the model starts taking fewer and fewer random actions after each trial and it slowly transitions from exploration to exploitation.
+    - **Using Exploration functions** is the idea of exploring areas whose badness is not (yet) established.
+    <p align="center">
+        <img src="../../img/post-img/reinforcement/19.png" height="80%" width="80%">
+    </p>
+- **Regret** = the difference between the (expected) rewards including youthful suboptimality, and optimal (expected) rewards.
+
 #### Value learning
 to evaluate a fixed policy $$\pi$$
 
-### How to pick actions
-- do some fixed set of actions every time => won't learn
-- randomly => won't use what it's learnt
-- random start once it gets low Q-value => reinforce local min
-Solution: **Exploration vs. Exploitation** using \\( \epsilon \\)-greedy algorithm (**simulated annealing**)
 
-
- 
-
-### Uninformed Search
-
-**World State** = all possible configurations of the world
-**State space**
-
-Solving search problems
-- State space graphs (a math concept that this problem can be solved by drawing out all the configurations lol)
-- Search trees 
-
-Search algorithm properties:
-- Optimal: least cost path
-- Complete
-- Time complexity 
-- Space complexity 
-
-### Cost = 1
-DFS 
-- LIFO stack
-- Time complexity O(\\(b^m\\))
-- Space complexity O(\\(b*m\\))
-- Optimal: not guaranteed
-- Works better when solution is deep + to the left
-
-BFS
-- FIFO queue
-- Time complexity O($$b^s$$) 
-- Space complexity O($$b^s$$)
-- Optimal: yes if cost = 1
-- Works better when solution is shallow + to the right and in most cases
-
-Iterative Deepening
-DFS with a twist that exploits the space complexity of DFS and time of BFS
-
-### When cost is involved 
-Uniform Cost Search is similar to BFS, but it does return the least cost path
-- priority queue
-- hmm i still need to understand this
-
-
-### TODO 
-try running GridWorld yourself
-
-Cost-sensitive Search
 ### References
-These are all the sources I used to make this post.
+I used the sources below to make this post.
 
-[^1]: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf
+- [RL by David Silver](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf)
+- [CS 188 AI](https://www.youtube.com/watch?v=W1S-HSakPTM&list=PLIZQvCoJVokgKBNx210mkXEk4FeSOGfWu)
