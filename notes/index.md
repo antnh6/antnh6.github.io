@@ -30,7 +30,8 @@ Outside of school, I try to learn more about AI and Machine Learning, and keep t
 5. AI Topics
 	* [Search Problems](2017-08-01-searchproblems)
 		* [Constraint Satisfaction Problems](2017-08-05-csp)
-		* [Adversarial Search](2017-08-12-adversarial)
+		* [Adversarial Search (Minimax)](2017-08-12-adversarial)
+		* [Expectimax + Non Zero-sum Games]()
 5. Miscellaneous
 	* [R Cheat Sheet](2017-06-26-r-cmds)
 	* [Python Cheat Sheet](2017-06-26-python-cmds)

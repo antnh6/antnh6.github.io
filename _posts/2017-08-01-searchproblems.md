@@ -40,14 +40,14 @@ Uses a heuristic to tell if we've moved closer to a goal after every move.
 ### Heuristic
  A **heuristic** gives an estimate of how close we are to a goal and is designed for a particular search problem. Usually denoted as $$h(x)$$. 
  
- States that are closer to the goal have a lower heuristic value and the goal state has a heuristic value of 0.
+ States that are closer to the goal thus have a lower heuristic value and the goal state has a heuristic value of 0.
 
 ### Greedy Search 
 - follows heuristic, completely ignores costs
 - therefore, it is not always be optimal
 
 ### A* Tree Search
-- **Idea**: combines UCS and Greedy: methodically check everything that might be optimal but can prove that sth is suboptimal before heading that direction too deep thanks to a heuristic.
+- **Idea**: combines UCS and Greedy. If the number of states is bounded, then A* search is compllete. The heuristic only helps choose which node to expand first.
     - Example: 
         <p align="center">
             <img src="../../img/post-img/reinforcement/search/1.png" height="50%" width="50%">
@@ -60,7 +60,7 @@ Uses a heuristic to tell if we've moved closer to a goal after every move.
 
 - UCS is a special case where h(every node) = 0
 
-- **Optimality** A* is only optimal when the heuristic is **admissible**, i.e. it slows down bad plans but the estimated cost from a state is never more than the the actual cost incurred from the shortest path to a goal from that state.
+- **Optimality** A* is only optimal when the heuristic is **admissible**, i.e. it slows down bad plans but the estimated cost from a state to a goal is never more than the the actual cost incurred by the shortest path from that state to the goal (guess path cost <= actual path cost)
 
     In the example below, A* would give us the lower path, which is not optimal. What went wrong is that the estimated cost h(A) = 6 is higher than the actual cost of 3 to get to the goal. 
 <p align="center">
@@ -81,7 +81,7 @@ Uses a heuristic to tell if we've moved closer to a goal after every move.
         <img src="../../img/post-img/reinforcement/search/4.png" height="60%" width="60%">
     </p> 
 $$\rightarrow$$ Heuristic used also needs consistency which is stronger than admissibility for search to be optimal.
-- **Consistency** heuristic "arc" cost $$\leqslant$$ actual cost for each arc
+- **Consistency** heuristic/guess edge cost $$\leqslant$$ actual edge cost
 \begin{equation}
     h(A)-h(C) \leqslant cost (A to C)
 \end{equation}

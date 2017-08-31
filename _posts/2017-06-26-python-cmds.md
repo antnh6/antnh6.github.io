@@ -128,7 +128,8 @@ a = (member for member in fellowship if len(member) >=7 )
 with open('world_dev_ind.csv') as file:
     file.readline() # to read in a line
 ```
-
+## Visualizing tips
+* make eCDF
 ## Import Data
 * file = open(filename, mode='r'forReadOnly) or just use context manager
     * file.read()
@@ -137,13 +138,27 @@ with open('world_dev_ind.csv') as file:
 
 ----------------------------------------------------------
 ## Freq-used Packages
+* sqlalchemy to do SQL query in a Pythonic way
+    - create engine()
+    - table_names() 
+    - connect
+    - select
+        - where
+        - and_, or_, all_, in_
+        - order_by
+        - func.count,sum
+        - label
+        - case
+        - cast
+    - group_by
+    - fetchall, first, scalar
+    - join to define relationships between tables
+    - to join table to itself on different columns, create a copy of the table using alias()
 * re
     * RegEx, ex: $17.895 = ^\\$\d*\\.\d{2}$ ; Australia = [A-Z]\w*
     * re.compile(pattern)
     * match
     * re.findall(pattern,string)
-* seaborn - a statistical data visualization lib
-    * barplot(labels, data)
 * builtins
 * urllib.request to save file locally
     * urlretrieve
@@ -167,6 +182,8 @@ with open('world_dev_ind.csv') as file:
 * math
 * glob to do globbing
 * numpy (arrays) == standard for storing numerical data
+    * linspace(start,stop,n_default=50) to create a 1D vector of evenly spaced numbers 
+    * reshape(-1,1) shapes whatever form to automatically inferred row size and column of 1
     * np.loadtxt(filename, delimiter=, skiprows=,usecols=,dtype=)
     * for cols with mixed datatypes use 
     np.genfromtxt(dtype=None, names=True means there is a header)
@@ -182,11 +199,15 @@ with open('world_dev_ind.csv') as file:
     * transpose()
 * scipy 
     * linalg
+* seaborn - a statistical data visualization lib, default style nicer looking > plt
+    * barplot(labels, data)
+    * bee swarm plot (x,y,data)
 * matplotlib.pyplot as plt
+    * use _ as a dummy var to draw
     * plt.plot(x,y, style='colorMarkerLine') for line
     * plt.scatter(x,y,size=otherFeature,c=color,alpha=) for scatter plot
         * plt.xscale('log')
-    * plt.hist(data,bins=, range=,normed=)
+    * plt.hist(data,bins=numBins/binEdges, range=,normed=) -> binning problem -> use bee swarm plot
     * plt.xlabel('name')
     * plt.ylabel('name)
     * plt.title()
@@ -201,18 +222,29 @@ with open('world_dev_ind.csv') as file:
 * pandas (for data frames where each col is a Series (1D array with row labels) which yields np array on command series.values)
     * df.info()
     * pd.notnull(df).all().all() first all will return boolean for each col, second all will return one final boolean
+    * pct_change() lastVal-thisVal
     * count()
     * quantile(num)
+    * turn sth into categorical values by pd.Categorical(values=,categories,ordered=)
+    * sum(axis='columns') to add horizontally
+    * idxmax/min returns idx or row label of max value
     * unique() returns list of unique values
+        * nunique() returns num of unique values
+    * sort_values(ascending=False)
     * to merge df's
         * merge(left=, right=, on=, left_on=, right_on)
         * 1-to-1
         * many-to-many ???
     * to concatenate df's by stitching data from
-        * top and bottom: use pd.concat([df1,df2], ignore_index=True) to reset index
+        * top and bottom: use pd.concat([df1,df2], keys= ,ignore_index=True) to reset index
         * the sides: add axis = 1
+        * join = 'inner' only matches columns of the same row labels
+    * groupby(col)[cols].agg({col1:func1, col2:func2})
     * index
         * reset_index()
+        * unstack(level=) multi-index to get shorter and wider df
+        * flip indices by swaplevel()
+        * sort_index()
     * pd.read_csv(fileName, header= chunksize=, names=colNames, na_values=, parse_dates for Time Series, comments=, index_col=) to read in data in chunks in for loop
     * df = pd.DataFrame(dict)
     * df.head()/tail()
@@ -230,7 +262,7 @@ with open('world_dev_ind.csv') as file:
     * df.plot(kind=, x=, y=,)
     * df.floordiv(num) floor the result of dividing by num
     * df.boxplot(column=,by=)
-    * df.Colname.value_counts(dropna = False)
+    * df.Colname.value_counts(dropna = False) to get the counts for each value in col
     * df.describe to get statistical summary of data
     * df.index = []
     * df.isnull/notnull chained with all()/any() 
@@ -273,7 +305,7 @@ cars["newColumn"] = cars["someColumn"].apply(function)
 --------------------------------------------------------------------------
 ## Scikit Learn
 * display(df.head(n=3))
-
+* train_test_split(random_state=seed,stratify=ToKeepTargetDistribution,test_size=0.3)
 * Choose a scikit-learn classifier (e.g., adaboost, random forests) that has a feature_importance_ attribute, which is a function that ranks the importance of features according to the chosen classifier.
 * from sklearn.decomposition import **PCA**
     * fit
@@ -290,6 +322,14 @@ cars["newColumn"] = cars["someColumn"].apply(function)
 ----------------------------------------
 
 ## Keras 
+- load_model to load saved model by save('file.h5')
+- model.summary()
+- Sequential
+    - to_categorical is same as one-hot-encoding
+    - model.compile(heheh)
+    - model.fit()
+    - callbacks
+        - earlyStoppingm(patience=num) used to stop training num epochs following the moment CV stops improving
 - Conv2D
     * **filters** = numFilters
     * **kernel_size** = tuple of height and width of filter
