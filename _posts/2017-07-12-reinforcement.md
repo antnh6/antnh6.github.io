@@ -13,7 +13,9 @@ use-math: true
     - [Important Terminology](#important-terminology)
     - [Solving finite-state MDPs](#solving-finite-state-mdps)
         - [1. Value Iteration](#1-value-iteration)
+            - [Policy Extraction](#policy-extraction)
         - [2. Policy Iteration](#2-policy-iteration)
+            - [Policy Evaluation](#policy-evaluation)
 - [Reinforcement Learning](#reinforcement-learning)
     - [1. Model-based](#1-model-based)
     - [2. Model-free](#2-model-free)
@@ -87,17 +89,18 @@ which can be written in one line as follows
 Below are two efficent algorithms for doing so. They are basically the same, all variations of Bellman updates.
 ### 1. Value Iteration
 - Algorithm
-    1. Assign random value to each state ???? Need values for states with 0 time steps
+    1. Assign random value to each state (usually 0)
     2. Use the Bellman equation above to update the values
     3. Repeat step 2 until values converge (i.e. they no longer change much, or the change is under some pre-defined threshold)
 - Efficiency is O($$a*s^2$$) per iteration because we have to visit each state to do the updates and at each state, there's potentially s number of states because all of the states could be interconnected.
-- Limitations:
+- Limitations: <a id="policy-extraction"></a>
     - Can take a long time to converge, and policy usually converges way before values do. See demo [here]().
     - Once we have the optimal values, they do not right away tell us what action to take unless we do **Policy Extraction** for every state 
+        - from values
     \begin{equation}
         \pi^\*(s) = arg\max_{a}(R(s) + \gamma\sum_{s'}P(s,a,s')V^\*(s'))
     \end{equation}
-    Knowing Q-values will be easier to select actions than knowing values!
+        - from Q-values
     \begin{equation}
         \pi^\*(s) = arg\max_{a}(R(s) + \gamma*Q^\*(s,a)
     \end{equation}
@@ -105,7 +108,7 @@ Below are two efficent algorithms for doing so. They are basically the same, all
     <p align="center">
         <img src="../../img/post-img/reinforcement/18.png" height="75%" width="75%">
     </p>
-
+<a id="policy-evaluationgamma"></a>
 ### 2. Policy Iteration
 - **Policy Evaluation** calculates values for a fixed policy $$\pi$$
     \begin{equation}
@@ -185,7 +188,7 @@ However, we still cannot infer actions from these values because the transitions
 ### Active RL
 We still don't know the transactions and rewards BUT get to choose actions now (no fixed policy). Goal is to learn the state values AND the optimal policy.
 #### Q-learning
-to compute $$V^*$$, $$Q^*$$, $$\pi^*$$
+Idea is similar to Temporal Difference Learning, but for Q-values, to compute $$V^*$$, $$Q^*$$, $$\pi^*$$
     \begin{equation}
         Q_{k+1}(s,a) \leftarrow \sum_{s'}P(s,a,s')[R(s,a,s') + \gamma\max_{a'}Q_{k}(s',a')]
     \end{equation}
