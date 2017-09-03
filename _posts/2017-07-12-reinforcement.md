@@ -165,8 +165,7 @@ learn the values under a fixed policy
         <img src="../../img/post-img/reinforcement/17.png" height="20%" width="20%">
     </p>
 **However**, this method is not practical because we cannot just rewind time to get sample after sample from state s.
-- **Temporal Difference Learning** 
-a model-free way to do Policy Evaluation
+- **Temporal Difference learning of Values** 
     1. Assign random value to each state
     2. Experience to get empirical value, then move old value a little bit toward this newly acquired value: running average
     - **Why does this work?** Likely outcomes will contribute updates more often.
@@ -188,15 +187,12 @@ However, we still cannot infer actions from these values because the transitions
 ### Active RL
 We still don't know the transactions and rewards BUT get to choose actions now (no fixed policy). Goal is to learn the state values AND the optimal policy.
 #### Q-learning
-Idea is similar to Temporal Difference Learning, but for Q-values, to compute $$V^*$$, $$Q^*$$, $$\pi^*$$
-    \begin{equation}
-        Q_{k+1}(s,a) \leftarrow \sum_{s'}P(s,a,s')[R(s,a,s') + \gamma\max_{a'}Q_{k}(s',a')]
-    \end{equation}
+aka the Temporal Difference learning of Q-values. This is superior to the TD of values because we can extract the policy directly by taking $$\pi{s}$$ = argmax_{a}Q(s,a)
 - **Overview**:
-    1. Receive a sample transition (s,a,r,s')
+    1. "Receive" a sample Q(s,a)
     2. This sample suggests 
     \begin{equation}
-        Q(s,a) \approx r + \gamma\max_{a'}Q(s',a')
+        Q(s,a) = sample \approx R(s,a,s') + \gamma\max_{a'}Q(s',a')
     \end{equation}
     3. Average over samples from (s,a) by keeping a running average
     \begin{equation}
@@ -217,7 +213,9 @@ Idea is similar to Temporal Difference Learning, but for Q-values, to compute $$
     </p>
 - **Regret** = the difference between the (expected) rewards including youthful suboptimality, and optimal (expected) rewards.
 
-#### Value learning
+### Value learning
+
+### Feature-based Q-learning
 to evaluate a fixed policy $$\pi$$
 
 
