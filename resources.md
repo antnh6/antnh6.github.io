@@ -19,6 +19,7 @@ These courses all have lectures and assignments posted online.
     - [CMU - ML for PhD (10-701) or for Master's (10-601)](http://www.cs.cmu.edu/~tom/10701_sp11/) many offerings on Youtube
 - [Caltech - Learning from Data](https://work.caltech.edu/telecourse.html) <strong>*</strong>
 - [UC Berkeley - CS 188 AI](https://inst.eecs.berkeley.edu/~cs188/fa11/lectures.html) <strong>*</strong>
+- [Deep RL](http://rll.berkeley.edu/deeprlcourse/)
 - [Stanford - CS 231n - Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/watch?v=2uiulzZxmGg)
 - [Coursera - NNs for ML](https://www.coursera.org/learn/neural-networks)
 - [David Silver - RL](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLzuuYNsE1EZAXYR4FJ75jcJseBmo4KQ9-) (I've watched up to Lec 4, hurt my brain a lot, will continue later) 
