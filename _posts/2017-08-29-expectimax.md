@@ -12,10 +12,10 @@ categories: notes
 - But in this case, our opponent is not adversarial i.e. non-optimal, and will pick next action based on some probability. Therefore, instead of alternating between max/min levels, we alternate between max/chance levels where each chance node is a weighted average of all the children, with the weight being the probability that that child is reached.
 - Minimax is insensitive to monotonic transformations, which means states with better evaluations stay better after the transformations. This is not the case with expectimax.
 <p align="center">
-    <img src="../../img/post-img/reinforcement/non-adversarial/1.png" height="30%" width="30%">
+    <img src="../../img/post-img/reinforcement/non-adversarial/1.png" height="50%" width="50%">
 </p>
 <p align="center">
-    <img src="../../img/post-img/reinforcement/non-adversarial/2.png" height="30%" width="30%">
+    <img src="../../img/post-img/reinforcement/non-adversarial/2.png" height="50%" width="50%">
 </p>
 - This model renders the Alpha-Beta pruning useless
 - Minimax is too pessimitic and is worst when the world is random, while expectimax is too optimistic, thus worst when the world is adversarial.

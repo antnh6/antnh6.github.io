@@ -166,7 +166,8 @@ learn the values under a fixed policy
     </p>
 **However**, this method is not practical because we cannot just rewind time to get sample after sample from state s.
 - **Temporal Difference learning of Values** 
-    1. Assign random value to each state
+The name is from the difference between two adjacent states 
+    1. Assign random value (usually 0) to each state
     2. Experience to get empirical value, then move old value a little bit toward this newly acquired value: running average
     - **Why does this work?** Likely outcomes will contribute updates more often.
     - $$\alpha$$ is called a **learning rate**
@@ -216,8 +217,9 @@ aka the Temporal Difference learning of Q-values. This is superior to the TD of 
 ### Value learning
 
 ### Feature-based Q-learning
-to evaluate a fixed policy $$\pi$$
+When we have a lot of states and lots of actions to choose from, it is too much to hold in memory so we switch to feature-based representation.
 
+## 2. Policy Search
 
 ### References
 I used the sources below to make this post.
