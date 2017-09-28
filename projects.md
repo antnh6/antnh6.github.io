@@ -5,6 +5,7 @@ comments: true
 tags: [projects]
 ---
 #### Clicking on the image will take you to its corresponding code on GitHub :)
+
 - **Dog Breed Detector** - I implemented a CNN with AWS GPU to classify dog breeds or the most resembling dog breed among 133 available breeds when given as input an image of either a dog or a human.
 <div align="center">
     <p >
@@ -13,6 +14,7 @@ tags: [projects]
         </a>
     </p>
 </div>
+
 - **Grouping customers** - In this project, I employed two unsupervised ML algorithms PCA, GMM and some pre-processing tools to group customers into clusters based on their annual spending amounts on 6 categories.
 <div align="center">
     <p >
@@ -21,6 +23,7 @@ tags: [projects]
         </a>
     </p>
 </div>
+
 - **Predicting potential donors** - In this project, I employed several supervised learning models to predict whether a person is making over $50k a year, thus be a potential donor to a non-profit.
 <div align="center">
     <p >
@@ -38,6 +41,7 @@ tags: [projects]
         </a>
     </p>
 </div>
+
 - **Compiler** - I built a scanner, a parser, and a compiler all in C++ for a small language similar to C++ called WLP4.
 <div align="center">
     <p >
@@ -50,7 +54,7 @@ tags: [projects]
 - **Quadris** - I built a non-real time C++ Latinization version of Tetris with two classmates.
 <div align="center">
     <p >
-        <a href="https://github.com/antnh6/Compiler">
+        <a href="https://drive.google.com/file/d/0BxyZZUtut6fMTmxxeTdwZXRoUFE/view?usp=sharing">
             <img src="../../img/projects/quadris.png" height="85%" width="85%"> 
         </a>
     </p>
@@ -58,16 +62,14 @@ tags: [projects]
 
 - **Blackjack**: one of my first projects written in Python
 <div align="center">
-    <!-- <p>
-        Blackjack: one of my first projects written in Python
-    </p> -->
     <p >
         <a href="https://github.com/antnh6/Projects-in-Python/blob/master/5)%20Blackjack.py">
             <img src="../../img/projects/blackjack.png" height="60%" width="60%"> 
         </a>
     </p>
 </div>
-- **Spaceship** : one of my first projects written in Python
+
+- **Spaceship** : my very first project written in Python
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/Projects-in-Python/blob/master/6)%20Spaceship.py">
