@@ -30,6 +30,14 @@ tags: [projects]
     </p>
 </div>
 
+- **This website** - Built with Jekyll, JavaScript and Markdown, this website is meant to be a home for my projects, and notes on topics I learn on the side. I hope it also gives you some glimpses into who/how I am as a person based on my interests (e.g. I love the color purple, hah!)
+<div align="center">
+    <p >
+        <a href="https://github.com/antnh6/my-personal-site">
+            <img src="../../img/myDog.jpg" height="40%" width="40%"> 
+        </a>
+    </p>
+</div>
 - **Compiler** - I built a scanner, a parser, and a compiler all in C++ for a small language similar to C++ called WLP4.
 <div align="center">
     <p >
