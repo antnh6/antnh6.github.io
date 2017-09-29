@@ -4,9 +4,9 @@ title: Projects
 comments: true
 tags: [projects]
 ---
-#### Clicking on the image will take you to its corresponding code on GitHub :)
+#### Clicking on each image will take you to the corresponding code on GitHub :)
 
-- **Dog Breed Detector** - I implemented a CNN with AWS GPU to classify dog breeds or the most resembling dog breed among 133 available breeds when given as input an image of either a dog or a human.
+- **Dog Breed Detector** - Implemented a *CNN* using *Keras* on an *AWS GPU* to identify dog breed or the most resembling dog breed detected in a given image of either a dog or a human with 84% accuracy.
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/Projects-in-Python/blob/master/5)%20Blackjack.py">
@@ -15,7 +15,7 @@ tags: [projects]
     </p>
 </div>
 
-- **Grouping customers** - In this project, I employed two unsupervised ML algorithms PCA, GMM and some pre-processing tools to group customers into clusters based on their annual spending amounts on 6 categories.
+- **Grouping customers** - In this project, I employed unsupervised ML algorithms PCA, GMM and some pre-processing tools to group customers into clusters based on their annual spending amounts on 6 categories.
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/customer_segments">
@@ -24,7 +24,7 @@ tags: [projects]
     </p>
 </div>
 
-- **Predicting potential donors** - In this project, I employed several supervised learning models to predict whether a person is making over $50k a year, thus be a potential donor to a non-profit.
+- **Predicting potential donors** - In this project, I employed three supervised learning models to predict whether a person is making over $50k a year, thus be a potential donor to a non-profit.
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/Predicting-Potential-Donors">
@@ -33,7 +33,7 @@ tags: [projects]
     </p>
 </div>
 
-- **This website** - Built with Jekyll, JavaScript and Markdown, this website is meant to be a home for my projects, and notes on topics I learn on the side. I hope it also gives you some glimpses into who/how I am as a person based on my interests (e.g. I love the color purple, hah!)
+- **This website** - Built with Jekyll, JavaScript and Markdown, this website is the home for my projects, and notes on topics I have been learning outside of school. I hope it also gives you some glimpses into my personality (e.g. I adore the color purple).
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/my-personal-site">
@@ -46,7 +46,16 @@ tags: [projects]
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/Compiler">
-            <img src="../../img/projects/compiler.jpg" height="50%" width="50%"> 
+            <img src="../../img/projects/compiler.jpg" height="35%" width="35%"> 
+        </a>
+    </p>
+</div>
+
+- **Projects in R**: A repository of code I wrote to learn data analysis/visualization when taking [the Analytics Edge](https://www.edx.org/course/analytics-edge-mitx-15-071x-3).
+<div align="center">
+    <p >
+        <a href="https://github.com/antnh6/Projects-in-R">
+            <img src="../../img/projects/r.png" height="55%" width="55%"> 
         </a>
     </p>
 </div>
@@ -60,7 +69,7 @@ tags: [projects]
     </p>
 </div>
 
-- **Blackjack**: one of my first projects written in Python
+- **Blackjack**: One of my first projects written in Python
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/Projects-in-Python/blob/master/5)%20Blackjack.py">
@@ -69,7 +78,7 @@ tags: [projects]
     </p>
 </div>
 
-- **Spaceship** : my very first project written in Python
+- **Spaceship** : My very first project written in Python
 <div align="center">
     <p >
         <a href="https://github.com/antnh6/Projects-in-Python/blob/master/6)%20Spaceship.py">

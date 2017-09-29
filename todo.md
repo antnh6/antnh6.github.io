@@ -9,7 +9,7 @@ comments: true
 | | TODO | PROGRESS | 
 | |:-------:|:------:|:---:|
 |1| Hold a plank for 5 minutes | at 1:30 mark |  
-|2| Do 40 push-ups in a row | at 13 (Jul 17, 2017) |  
+|2| Do 40 push-ups in a row | at 15 (Sep 28, 2017) |  
 |3| Go skydiving and/or bungee jumping | |  
 |4| Live in Japan for at least 6 months |  |  
 |5| Learn to swim freestyle properly |  |  
@@ -19,8 +19,8 @@ comments: true
 | 9| <s>Cook 10 meals well</s> | [om nom nom](https://www.instagram.com/p/BSeQ_aFBvXR/?taken-by=an.nwin) |
 | 10| Complete a challege on Kaggle| |
 | 11| Attend 5 Hackathons | 1/5 |
-| 12| Learn Morse Code | at [15wpm](https://www.memrise.com/course/151/learn-morse-code/) |
-|13| Do 5 consecutive pull-ups | |
+| 12| Learn Morse Code | at [level 26 (Sep 28, 17)](https://www.memrise.com/course/151/learn-morse-code/) |
+|13| Do 5 consecutive pull-ups | I cannot even do 0 atm |
 |14| Publish a blog post on Medium| |
 |15| Volunteer for a shelter for at least a year | Did 6 months before I had to move at my last shelter |
 |16| Live in Europe for at least 6 months | |
