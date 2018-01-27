@@ -9,7 +9,7 @@ categories: notes
 \begin{equation}
 P(A|B) =\frac{P(B|A) \times P(A)} {P(B|A) \times P(A)+P(B|\sim A) \times P(\sim A)}
 \end{equation}
-- We call P(A) the **prior probability** and P(A|B) the **posterior probability** 
+- We call P(A) the **prior probability** and P(A\|B) the **posterior probability** 
 
 - **Naive Bayes**  
 In reality, we have to predict an outcome given **multiple evidences**. In that case, the math gets very complicated. To get around that complication, one approach is to 'uncouple' multiple pieces of evidence, and to treat each piece of evidence as independent, thus the name **Naive** Bayes. [(source)][2]

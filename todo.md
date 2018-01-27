@@ -1,41 +1,56 @@
 ---
 layout: page
-title: TODO List
+title: TODO list 
 tags: [todo]
 use-site-title: true
 comments: true
 ---
 
-| | TODO | PROGRESS | 
+## Travel
+
+| |  | Progress | 
 | |:-------:|:------:|:---:|
-|1| Hold a plank for 5 minutes | at 1:30 mark |  
-|2| Do 40 push-ups in a row | at 15 (Sep 28, 2017) |  
-|3| Go skydiving and/or bungee jumping | |  
-|4| Live in Japan for at least 6 months |  |  
-|5| Learn to swim freestyle properly |  |  
-| 6| Learn to play this [song](https://www.youtube.com/watch?v=BUXKoix4Q4I) |  |  
-| 7| Read every Pulitzer Prize-Winning Novel |  |  
-| 8| Run a 5k | |
-| 9| <s>Cook 10 meals well</s> | [om nom nom](https://www.instagram.com/p/BSeQ_aFBvXR/?taken-by=an.nwin) |
-| 10| Complete a challege on Kaggle| |
-| 11| Attend 5 Hackathons | 1/5 |
-| 12| Learn Morse Code | at [level 26 (Sep 28, 17)](https://www.memrise.com/course/151/learn-morse-code/) |
-|13| Do 5 consecutive pull-ups | I cannot even do 0 atm |
-|14| Publish a blog post on Medium| |
-|15| Volunteer for a shelter for at least a year | Did 6 months before I had to move at my last shelter |
-|16| Live in Europe for at least 6 months | |
-|17| Win 5 Escape Rooms | |
-|18| Watch Top 250 IMDb | at 51/250, most recently watched: The Hunt|
-|19| Become blue on TopCoder| |
-|20| Obtain dual citizenship with another country|
-|21| Post a Kpop cover dance on Youtube|
-|22| Do a yoga headstand| | 
-|23| Do a full split| |
-|24| Read 25 Pages of Non-Fiction Per Day for Three Months in a row [(inspiration)](https://collegeinfogeek.com/25pages/)| |
-|25| Graduate with above 80% CAV | |
-|26| Learn a deck of cards in under 2 min| |
+|1| Live in Japan for at least 6 months |  |  
+|2| Go skydiving and/or bungee jumping | |  
+|3| Live in Europe for at least 6 months | |
 
+## School + Work
 
+| | | Progress | 
+| |:-------:|:------:|:---:|
+|1| Complete a challenge on Kaggle| |
+|2| Attend 5 Hackathons | 1/5 |
+|3| Become blue on TopCoder| |
+|4| Graduate with above 80% CAV | |
+
+## Fitness
+
+| |  | Progress | 
+| |:-------:|:------:|:---:|
+|1| Hold a plank for 5 minutes | at 2 min (Jan 26, 2018) |  
+|2| Do 40 push-ups in a row | at 16 (Jan 26, 2017) |  
+|3| Do 5 consecutive pull-ups | at 0; totally underestimated the difficulty of this exercise (minor panic) |
+|4| Do a headstand|  |
+|5| Do a full split| | 
+|6| Run a 5k | |
+|7| Learn to swim freestyle properly |  |  
+
+## Miscellaneous
+
+| |  | Progress | 
+| |:-------:|:------:|:---:|
+|1| Post a Kpop cover dance on Youtube|
+|2| Publish a blog post on Medium| |
+|3| <s>Cook 10 meals well</s> | [om nom nom](https://www.instagram.com/p/BSeQ_aFBvXR/?taken-by=an.nwin) |
+|4| Learn to play this [song](https://www.youtube.com/watch?v=BUXKoix4Q4I) |  |  
+|5| Watch all Top 250 IMDB | at [51/250]()|
+|6| Win 5 Escape Rooms | |
+|7| Obtain dual citizenship with another country|
+|8| Volunteer for a shelter for at least a year | At last shelter for 6 months, then had to move |
+|9| Learn Morse Code | at [level 26 (Sep 28, 17)](https://www.memrise.com/course/151/learn-morse-code/) |
+|10| Read 26 [books](books/2018-01-26-books2018) in 2018 [(inspiration)](https://collegeinfogeek.com/25pages/)| |
+|11| Learn a deck of cards in under 2 min| |
+|12| Read every Pulitzer Prize-Winning Novel |  |  
 
 
 <!-- |27| Type at 100 wpm | |  -->
