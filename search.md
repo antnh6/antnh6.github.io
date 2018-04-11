@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Where is Belize, An?
+title: Where is Belize?
 css: "/css/search.css"
 ---
 
-## WORK IN PROGRESS
-### You can search for anything on my site by using this Amazing Google Search
+### WORK IN PROGRESS
+### You can search for anything on my site by using this amazing Google Search.
 
-The bad joke above is from Breaking Bad in case you're wondering.
+The bad joke above is from the show Breaking Bad for those of you who are missing out on the greatest TV show in history :) 
 <div id="google-custom-search">
 <script>
   (function() {
