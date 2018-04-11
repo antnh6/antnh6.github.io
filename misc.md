@@ -7,5 +7,5 @@ comments: true
 
 # Table of contents
 
-1. [Bitcoin and Cryto](crypto/2017-07-07-crypto)
+<!-- 1. [Bitcoin and Cryto](crypto/2017-07-07-crypto) -->
 	

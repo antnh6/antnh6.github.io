@@ -14,4 +14,7 @@ comments: true
 * Winter 2018 (internship term)
     <!-- * [ENGL 101B - Introduction to Rhetorical Studies](engl101b/2018-01-09-engl101b) -->
     * [PMATH 333 - Introduction to Real Analysis](pmath333/2018-01-09-p)
+    * [MIT 6.004 - Computation Structures](mit6004/2018-02-26-l1)
+    * [6.033]
+
     

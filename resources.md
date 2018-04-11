@@ -5,6 +5,8 @@ comments: true
 tags: [resources]
 ---
 
+**In dire need of updating**
+
 I have compiled below a list of resources relevant to ML, AI, and the whole shebang with the goal of getting through them gradually, one by one. 
 
 I am planning to sort the list in order of increasing difficulty, i.e. the order that I will take them in the near future and put an asterisk next to the courses I'm taking.
