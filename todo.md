@@ -48,7 +48,7 @@ comments: true
 |7| Obtain dual citizenship with another country|
 |8| Volunteer for a shelter for at least a year | At last shelter for 6 months, then had to move |
 |9| Learn Morse Code | at [level 31 (April 11, 17)](https://www.memrise.com/course/151/learn-morse-code/) |
-|10| Read 26 [books](books/2018-01-26-books2018) in 2018 [(inspiration)](https://collegeinfogeek.com/25pages/)| Done 3 (April 11, 2018). Well behind schedule :| |
+|10| Read 26 [books](books/2018-01-26-books2018) in 2018 [(inspiration)](https://collegeinfogeek.com/25pages/)| Done 3 (April 11, 2018). Well behind schedule T_T |
 |11| Learn a deck of cards in under 2 min| |
 |12| Read every Pulitzer Prize-Winning Novel |  |  
 
