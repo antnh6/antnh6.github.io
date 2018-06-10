@@ -4,10 +4,10 @@ title: Where is Belize?
 css: "/css/search.css"
 ---
 
-### WORK IN PROGRESS
-### You can search for anything on my site by using this amazing Google Search.
 
-The bad joke above is from the show Breaking Bad for those of you who are missing out on the greatest TV show in history :) 
+<strong>You can search for anything on my site by using this amazing Google Search.</strong>
+
+P/S: The bad joke above is from the show Breaking Bad for those of you who are missing out on the greatest TV show in history :) 
 <div id="google-custom-search">
 <script>
   (function() {
@@ -24,3 +24,5 @@ The bad joke above is from the show Breaking Bad for those of you who are missin
 <gcse:searchbox></gcse:searchbox>
 <gcse:searchresults></gcse:searchresults>
 </div>
+
+(Last Updated: June 9, 2018)

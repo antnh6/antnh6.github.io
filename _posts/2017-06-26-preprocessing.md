@@ -55,11 +55,33 @@ is used to pick out the best features from a large set of features. Two ways of 
 In sklearn, there are SelectKBest and SelectPercentile
 
 ### Feature Transformation
+
 refer to PCA/ICA 
+
 ### Relevance vs. Usefulness
 * A feature is strongly relevant if it helps improve/worsen the Bayes Optimal Classifier. A feature is deemed weakly relevant if it is only relevant in a strict subset of all features. 
-* A classifier is Bayes optimal if no other classifier can classify with a lower expected misclassification error.  Essentially it means that all of the classification error is due to genuine noise in the data.[(source)][4]
+* A classifier is Bayes optimal if no other classifier can classify with a lower expected misclassification error.  Essentially it means that all of the classification error is due to genuine noise in the data. [(source)][4]
 * 
 The usefulness of a feature is defined by how useful it is to a *particular* algorithm!
+
 [3]: http://sebastianraschka.com/Articles/2014_about_feature_scaling.html
+
 [4]: https://www.quora.com/What-is-meant-by-Bayes-Optimal-solution/answer/Justin-Rising?srid=ugxJO
+
+# Text Analytics
+
+**Amazon Mechanical Turk** https://www.mturk.com/mturk/welcome
+
+**Bag of Words**
+count the number of times each word appears. One feature for each word. Benefits greatly from preprocessed data:
+* Stemming 
+  <p align="center">
+    <img src="../../img/post-img/text-analytics/1.png" height="60%" width="60%">
+  </p>
+  * Porter stemmer
+  
+* Removing "stop words" such as "the", "who", "that"
+* Removing punctuations
+* Changing to lowercase
+
+(Last Updated: June 9, 2018)

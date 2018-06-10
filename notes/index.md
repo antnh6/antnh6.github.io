@@ -5,14 +5,17 @@ title: Interests
 comments: true
 ---
 
-Outside of school, I try to learn more about AI and Machine Learning, and keep these notes up-to-date with my current understanding of each topic.
+Outside of school, I try to teach myself some basic concepts of what I currently find interesting. 
+
+Two years ago, it was AI and ML. 
+
+Now, I find Security pulls my strings a bit more :)
 
 ### Contents
 
 1. Supervised
 	* [Linear Regression](2017-06-27-linear-regression)
 	* [Logistic Regression](2017-07-16-logistic-reg)
-	* Linear Discriminant Analysis
 	* [Decision Tree](2017-07-04-tree) 
 	* [Gaussian Naive Bayes](2017-06-21-gaussian-naive-bayes)
 	* Neural Networks
@@ -25,9 +28,8 @@ Outside of school, I try to learn more about AI and Machine Learning, and keep t
 		* [k-Means](2017-07-18-kmeans)
 		* [Soft Clustering](2017-07-13-softclustering)
 	* [PCA/ICA](2017-07-09-pca)
-3. Semisupervised
-4. [Reinforcement Learning](2017-07-12-reinforcement)
-5. AI Topics
+3. [Reinforcement Learning](2017-07-12-reinforcement)
+4. AI Topics
 	* [Search Problems](2017-08-01-searchproblems)
 		* [Constraint Satisfaction Problems](2017-08-05-csp)
 		* [Adversarial Search (Minimax)](2017-08-12-adversarial)
@@ -37,7 +39,6 @@ Outside of school, I try to learn more about AI and Machine Learning, and keep t
 5. Miscellaneous
 	* [R Cheat Sheet](2017-06-26-r-cmds)
 	* [Python Cheat Sheet](2017-06-26-python-cmds)
-	* [Text Analytics](2017-07-12-text-analytics)
 	* [Data Preprocessing](2017-06-26-preprocessing)
 
-	
+(Last Updated: June 9, 2018)

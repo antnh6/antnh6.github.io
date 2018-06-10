@@ -12,9 +12,12 @@ comments: true
     * [CO 250 - Intro to Optimization]()
     * [CS 360 - Intro to the Theory of Computing]()
 * Winter 2018 (internship term)
-    <!-- * [ENGL 101B - Introduction to Rhetorical Studies](engl101b/2018-01-09-engl101b) -->
-    * [PMATH 333 - Introduction to Real Analysis](pmath333/2018-01-09-p)
-    * [MIT 6.004 - Computation Structures](mit6004/2018-02-26-l1)
-    * [6.033]
+    * [MIT 6004 - Computation Structures](mit6004/2018-02-26-lecture) 
+* Summer 2018
+    * ENGL 119
+    * CS 454
+    * CS 452
+
+(Last Updated: June 9, 2018)
 
     

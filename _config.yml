@@ -28,6 +28,7 @@ navbar-links:
   Notes: 
     - Interests: "notes"
     - Course Notes: "courses"
+    - Books: "books"
     # - Misc.: "misc"
   Projects: "projects"
   Contact:

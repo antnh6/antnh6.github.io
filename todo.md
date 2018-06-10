@@ -28,7 +28,7 @@ comments: true
 | |  | Progress | 
 | |:-------:|:------:|:---:|
 |1| Hold a plank for 5 minutes | at 2 min (Jan 26, 2018) |  
-|2| Do 40 push-ups in a row | at 16 (Jan 26, 2017) |  
+|2| Do 40 push-ups in a row | at 16 (June 9, 2018) |  
 |3| Do 5 consecutive pull-ups | at 0; totally underestimated the difficulty of this exercise (minor panic) |
 |4| Do a headstand|  |
 |5| Do a full split| | 
@@ -44,14 +44,14 @@ comments: true
 |3| <s>Cook 10 meals well</s> | [om nom nom](https://www.instagram.com/p/BcSSZ2Yg5Ve/?taken-by=an.nwin) |
 |4| Learn to play this [song](https://www.youtube.com/watch?v=BUXKoix4Q4I) |  |  
 |5| Watch all Top 250 IMDB | at [51/250]()|
-|6| Win 5 Escape Rooms | |
+|6| <s>Win 5 Escape Rooms</s>| In the span of one week (April 23, 2018), I started from knowing nothing about escape rooms to having done 5 and escaped from 1. Hooray!|
 |7| Obtain dual citizenship with another country|
 |8| Volunteer for a shelter for at least a year | At last shelter for 6 months, then had to move |
 |9| Learn Morse Code | at [level 31 (April 11, 17)](https://www.memrise.com/course/151/learn-morse-code/) |
-|10| Read 26 [books](books/2018-01-26-books2018) in 2018 [(inspiration)](https://collegeinfogeek.com/25pages/)| Done 3 (April 11, 2018). Well behind schedule. T_T |
+|10| Read 26 [books](../books) in 2018 [(inspiration)](https://collegeinfogeek.com/25pages/)| Done 3 (April 11, 2018). Well behind schedule. T_T |
 |11| Learn a deck of cards in under 2 min| |
 |12| Read every Pulitzer Prize-Winning Novel |  |  
 
-
+(Last Updated: June 9, 2018)
 <!-- |27| Type at 100 wpm | |  -->
 <!-- |28| Solve a Rubik's cube in 3 min| | -->
